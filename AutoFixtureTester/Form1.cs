@@ -14,21 +14,28 @@ namespace AutoFixtureTester
     public partial class Form1 : Form
     {
         private SerialPort port;
+        private int dutStartPin;
+        private int dutEndPin;
         
         public Form1()
         {
             InitializeComponent();
-            init();
+            initSerialPort();
+            initUIComponents();
         }
 
-        private void init()
+        private void initUIComponents()
+        { 
+            txtBoxTestLogs.Text += DateTime.Now.ToString("hh:mm:ss") + ">> program loaded\n";
+        }
+
+        private void initSerialPort()
         {
             string[] port_names = SerialPort.GetPortNames();
             port = new SerialPort();
             port.WriteTimeout = 500;
             port.ReadTimeout = 500;
             port.BaudRate = 115200;
-            txtBoxTestLogs.Text += DateTime.Now.ToString("hh:mm:ss") + ">> program loaded\n";
             if (port_names.Length != 0)
             {
                 port.PortName = port_names[0];
@@ -44,24 +51,98 @@ namespace AutoFixtureTester
             }
             else
             {
-                MessageBox.Show("Device Not Found!");
                 txtBoxTestLogs.Text += DateTime.Now.ToString("hh:mm:ss") + ">> device not found\n";
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private bool checkPort()
         {
+            if (!port.IsOpen)
+            {
+                MessageBox.Show("Error!\nDevice Not Found!", "Z-Axis Connector");
+                return false;
+            }
 
+            return true;
         }
 
-        private void label15_Click(object sender, EventArgs e)
+        private void btnRunFullTest_Click(object sender, EventArgs e)
         {
+            if (!checkUserInput())
+                return;
 
+            if (!checkPort())
+                return;
+
+            if (!runOpenTest())
+                return;
+
+            runShortTest();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void btnRunShortTest_Click(object sender, EventArgs e)
         {
+            runShortTest();
+        }
 
+        private bool runShortTest() 
+        {
+            bool ret = false;
+
+            if (!checkUserInput())
+                return false;
+
+            if (!checkPort())
+                return false;
+            
+            return ret;
+        }
+
+        private void btnRunOpenTest_Click(object sender, EventArgs e)
+        {
+            runOpenTest(); 
+        }
+
+        private bool runOpenTest()
+        {
+            bool ret = false;
+
+            if (!checkUserInput())
+                return false;
+
+            if (!checkPort())
+                return false;
+            
+            return ret;
+        }
+
+        private bool checkUserInput()
+        {
+            if (!Int32.TryParse(txtBoxPinStart.Text, out dutStartPin))
+            {
+                MessageBox.Show("Error!\nDUT Start Pin Must Be An Integer", "Z-Axis Connector Company");
+                return false;
+            }
+
+            if (dutStartPin < 1 || dutStartPin > 50)
+            {
+                MessageBox.Show("Error!\nDUT Start Pin Must Be 1<X<50", "Z-Axis Connector Company");
+                return false;
+            }
+
+            if (!Int32.TryParse(txtBoxPinEnd.Text, out dutEndPin))
+            {
+                MessageBox.Show("Error!\nDUT End Pin Must Be An Integer", "Z-Axis Connector Company");
+                return false;
+            }
+
+            if (dutStartPin < 1 || dutEndPin > 50 || dutEndPin <= dutStartPin)
+            {
+                MessageBox.Show("Error!\nDUT Start End Pin Must Be 50>Y>X>1", "Z-Axis Connector Company");
+                return false;
+            }
+
+            return true;
         }
     }
 }
