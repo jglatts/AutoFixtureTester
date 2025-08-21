@@ -32,6 +32,7 @@ namespace AutoFixtureTester
         private readonly int startOpenTestCmd;
         private readonly int startShortTestCmd;
         private readonly int startFullTestCmd;
+        private readonly int cmdStart;
 
         public Form1()
         {
@@ -41,6 +42,7 @@ namespace AutoFixtureTester
             startOpenTestCmd = 68;
             startShortTestCmd = 69;
             startFullTestCmd = 70;
+            cmdStart = 71;
         }
 
         private void initUIComponents()
@@ -52,8 +54,8 @@ namespace AutoFixtureTester
         {
             string[] port_names = SerialPort.GetPortNames();
             port = new SerialPort();
-            port.WriteTimeout = 1500;
-            port.ReadTimeout = 1500;
+            port.WriteTimeout = 3500;
+            port.ReadTimeout = 3500;
             port.BaudRate = 115200;
             if (port_names.Length != 0)
             {
@@ -85,6 +87,13 @@ namespace AutoFixtureTester
             return true;
         }
 
+        private void sendPinInfo() 
+        {
+            port.Write($"{cmdStart} {dutStartPin} {dutEndPin}\n");
+            string ret = port.ReadLine();
+            MessageBox.Show(ret);
+        }
+
         private void btnRunFullTest_Click(object sender, EventArgs e)
         {
             if (!checkUserInput())
@@ -93,9 +102,10 @@ namespace AutoFixtureTester
             if (!checkPort())
                 return;
 
+            sendPinInfo();
             //sendCmd(startFullTestCmd);
-            testComms(startFullTestCmd);
-            runFullTest();
+            //testComms(startFullTestCmd);
+            //runFullTest();
         }
 
         private void runFullTest()
@@ -129,8 +139,9 @@ namespace AutoFixtureTester
             if (!checkPort())
                 return false;
 
+            sendPinInfo();
             //sendCmd(startShortTestCmd);
-            testComms(startShortTestCmd);
+            //testComms(startShortTestCmd);
 
             return ret;
         }
@@ -150,8 +161,9 @@ namespace AutoFixtureTester
             if (!checkPort())
                 return false;
 
+            sendPinInfo();
             //sendCmd(startOpenTestCmd);
-            testComms(startOpenTestCmd);
+            //testComms(startOpenTestCmd);
 
             return ret;
         }

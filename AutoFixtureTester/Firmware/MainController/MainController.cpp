@@ -17,30 +17,36 @@ bool MainController::init() {
 
 void MainController::waitForCmd() {
 	while (1) {
-		// check what we get here 
 		if (Serial.available() > 0) {
-			int test_type = Serial.readString().toInt();
-			if (test_type == PC_HOST_START_FULL_TEST)
-			{
+			int cmd = Serial.parseInt(); // read first integer (command)
+			switch (cmd) {
+			case PC_HOST_START_FULL_TEST:
 				testType = TEST_OPEN_SHORT;
-				Serial.println("will be starting full test");
+				Serial.println("Will be starting full test");
 				return;
-			}
-			if (test_type == PC_HOST_START_OPEN_TEST)
-			{
+			case PC_HOST_START_OPEN_TEST:
 				testType = TEST_OPEN;
-				Serial.println("will be starting open test");
+				Serial.println("Will be starting open test");
 				return;
-			}
-			if (test_type == PC_HOST_START_SHORT_TEST)
-			{
+			case PC_HOST_START_SHORT_TEST:
 				testType = TEST_SHORT;
-				Serial.println("will be starting short test");
+				Serial.println("Will be starting short test");
 				return;
+			case PC_DATA_CMD:
+				// read next two integers for start and end pins
+				startPin = Serial.parseInt();
+				endPin = Serial.parseInt();
+				char buff[100];
+				sprintf(buff, "Got start:%d and end:%d", startPin, endPin);
+				Serial.println(buff);
+				return;
+			default:
+				break;
 			}
 		}
 	}
 }
+
 
 void MainController::run() {
 	waitForCmd();
@@ -107,7 +113,7 @@ void MainController::testOpenTest() {
 	sendToSignalController(SIG_CONTROLLER_ADDR, RUN_OPEN_TEST);
 	delay(200);	// wait for signals
 
-	for (int i = 0; i < 1; i++) {
+	for (int i = 0; i < 40; i++) {
 		Serial.print("pin ");
 		Serial.print(dutPins[i].dut_test_pin);
 		if (digitalRead(dutPins[i].pcb_pin) == LOW) {
@@ -117,7 +123,38 @@ void MainController::testOpenTest() {
 			Serial.println(" OPEN");
 		}
 	}
-
 	delay(1000);
+}
 
+void MainController::testShortTest() {
+	sendToSignalController(SIG_CONTROLLER_ADDR, CLEAR_SIG_PINS);
+	delay(10);
+	for (int i = 0; i < 40; i++) {
+		int short_pin = 0;
+		PinMapping curr_pin = dutPins[i];
+		Serial.print("pin ");
+		Serial.print(dutPins[i].dut_test_pin);
+		for (int ii = 0; ii < 40; ii++) {
+			pinMode(dutPins[ii].pcb_pin, INPUT_PULLUP);
+		}
+		pinMode(curr_pin.pcb_pin, OUTPUT);
+		digitalWrite(curr_pin.pcb_pin, LOW);
+		bool ret = true;
+		for (int j = 0; j < 40; j++) {
+			if (i == j)
+				continue;
+			if (digitalRead(dutPins[j].pcb_pin) == LOW) {
+				ret = false;
+				short_pin = dutPins[j].dut_test_pin;
+				break;
+			}
+		}
+		if (ret)
+			Serial.println(" no short");
+		else {
+			Serial.print(" short with pin ");
+			Serial.println(short_pin);
+		}
+	}
+	delay(1000);
 }

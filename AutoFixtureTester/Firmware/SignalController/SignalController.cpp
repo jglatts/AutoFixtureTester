@@ -24,6 +24,8 @@ void SignalController::callBack(int size) {
 		test_data = Wire.read();
 		if (test_data == RUN_OPEN_TEST)
 			setPins();
+		if (test_data == CLEAR_SIG_PINS)
+			clearPins();
 	}
 }
 

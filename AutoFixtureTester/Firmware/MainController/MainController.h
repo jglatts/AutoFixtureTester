@@ -14,11 +14,14 @@
 #define RUN_SHORT_TEST	2
 #define RUN_FULL_TEST	3
 
+#define CLEAR_SIG_PINS 4
+
 #define SIG_CONTROLLER_ADDR 5
 
 #define PC_HOST_START_OPEN_TEST   68
 #define PC_HOST_START_SHORT_TEST  69
 #define PC_HOST_START_FULL_TEST   70
+#define PC_DATA_CMD               71
 
 #define NUM_TEST_PINS 40    // only 40 headers soldered - use 50 when get more
 
@@ -40,11 +43,14 @@ public:
     void sendToSignalController(int, int);
     void testComms(int);
     void testOpenTest();
+    void testShortTest();
     void run();
 private:
     void runFullTest();
     bool runOpenTest();
     bool runShortTest();
+    int startPin;
+    int endPin;
     TestType testType;
     // only 40 pins - have 50 tht should get more headers
     // note phys pins are swapped from schematic 

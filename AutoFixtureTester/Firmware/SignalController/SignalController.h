@@ -10,6 +10,8 @@
 
 #define ADDR 5
 
+#define CLEAR_SIG_PINS 4
+
 #define RUN_OPEN_TEST	1
 #define RUN_SHORT_TEST	2
 #define RUN_FULL_TEST	3
