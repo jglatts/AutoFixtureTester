@@ -16,6 +16,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 
 /*
  *  get nice working system in single thread
@@ -54,8 +55,8 @@ namespace AutoFixtureTester
         {
             string[] port_names = SerialPort.GetPortNames();
             port = new SerialPort();
-            port.WriteTimeout = 3500;
-            port.ReadTimeout = 3500;
+            port.WriteTimeout = 5000;
+            port.ReadTimeout = 5000;
             port.BaudRate = 115200;
             if (port_names.Length != 0)
             {
@@ -87,11 +88,9 @@ namespace AutoFixtureTester
             return true;
         }
 
-        private void sendPinInfo() 
+        private void sendCmdInfo(int cmd) 
         {
-            port.Write($"{cmdStart} {dutStartPin} {dutEndPin}\n");
-            string ret = port.ReadLine();
-            MessageBox.Show(ret);
+            port.Write($"{cmdStart} {dutStartPin} {dutEndPin} {cmd}\n");
         }
 
         private void btnRunFullTest_Click(object sender, EventArgs e)
@@ -102,9 +101,7 @@ namespace AutoFixtureTester
             if (!checkPort())
                 return;
 
-            sendPinInfo();
-            //sendCmd(startFullTestCmd);
-            //testComms(startFullTestCmd);
+            sendCmdInfo(startFullTestCmd);
             //runFullTest();
         }
 
@@ -113,9 +110,6 @@ namespace AutoFixtureTester
             // will need data processing here
         }
 
-        private void sendCmd(int cmd) {
-            port.WriteLine(cmd + "");
-        } 
 
         private void testComms(int cmd)
         {
@@ -139,11 +133,15 @@ namespace AutoFixtureTester
             if (!checkPort())
                 return false;
 
-            sendPinInfo();
-            //sendCmd(startShortTestCmd);
-            //testComms(startShortTestCmd);
+            setUIForTest();
+            sendCmdInfo(startShortTestCmd);
+            waitForSerialData();
 
             return ret;
+        }
+
+        private void setUIForTest() {
+            
         }
 
         private void btnRunOpenTest_Click(object sender, EventArgs e)
@@ -161,11 +159,28 @@ namespace AutoFixtureTester
             if (!checkPort())
                 return false;
 
-            sendPinInfo();
-            //sendCmd(startOpenTestCmd);
-            //testComms(startOpenTestCmd);
+            sendCmdInfo(startOpenTestCmd);
+            waitForSerialData();
 
             return ret;
+        }
+
+        private void waitForSerialData() {
+            while (true)
+            {
+                try
+                {
+                    string check = port.ReadLine();
+                    if (check.Trim() == "done")
+                        return;
+                    txtBoxTestLogs.Text += DateTime.Now.ToString("hh:mm:ss") + ">> " + check + "\n";
+                }
+                catch (TimeoutException)
+                {
+                    txtBoxTestLogs.Text += DateTime.Now.ToString("hh:mm:ss") + ">> timeout exp\n";
+                    continue;
+                }
+            }
         }
 
         private bool checkUserInput()

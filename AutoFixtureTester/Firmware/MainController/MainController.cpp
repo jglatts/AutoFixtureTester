@@ -12,44 +12,38 @@
 
 bool MainController::init() {
 	Wire.begin();
+	startPin = -1;
+	endPin = -1;
 	return true;
 }
 
 void MainController::waitForCmd() {
 	while (1) {
 		if (Serial.available() > 0) {
-			int cmd = Serial.parseInt(); // read first integer (command)
-			switch (cmd) {
-			case PC_HOST_START_FULL_TEST:
-				testType = TEST_OPEN_SHORT;
-				Serial.println("Will be starting full test");
-				return;
-			case PC_HOST_START_OPEN_TEST:
-				testType = TEST_OPEN;
-				Serial.println("Will be starting open test");
-				return;
-			case PC_HOST_START_SHORT_TEST:
-				testType = TEST_SHORT;
-				Serial.println("Will be starting short test");
-				return;
-			case PC_DATA_CMD:
-				// read next two integers for start and end pins
+			int cmd = Serial.parseInt();
+			char buff[200];
+			if (cmd == PC_DATA_CMD) {
 				startPin = Serial.parseInt();
 				endPin = Serial.parseInt();
-				char buff[100];
-				sprintf(buff, "Got start:%d and end:%d", startPin, endPin);
-				Serial.println(buff);
+				int type = Serial.parseInt();
+				if (type == PC_HOST_START_FULL_TEST) {
+					testType = TEST_OPEN_SHORT;
+				}
+				if (type == PC_HOST_START_OPEN_TEST) {
+					testType = TEST_OPEN;
+				}
+				if (type == PC_HOST_START_SHORT_TEST) {
+					testType = TEST_SHORT;
+				}
 				return;
-			default:
-				break;
 			}
 		}
 	}
 }
 
-
 void MainController::run() {
 	waitForCmd();
+	findIndicies();
 	if (testType == TEST_OPEN_SHORT) {
 		runFullTest();
 		return;
@@ -70,12 +64,78 @@ void MainController::runFullTest() {
 	runShortTest();
 }
 
+void MainController::findIndicies() {
+	for (int i = 0; i < NUM_TEST_PINS; i++) {
+		if (dutPins[i].dut_test_pin == startPin)
+			startIndex = i;
+		if (dutPins[i].dut_test_pin == endPin)
+			endIndex = i + 1;
+	}
+}
+
 bool MainController::runOpenTest() {
+	// clear pin state
+	for (int i = 0; i < NUM_TEST_PINS; i++) {
+		pinMode(dutPins[i].pcb_pin, INPUT_PULLUP);
+	}
+	delay(5);
+
+	// generate test signals
+	sendToSignalController(SIG_CONTROLLER_ADDR, RUN_OPEN_TEST);
+	delay(200);
+
+	// test the pins
+	for (int i = startIndex; i < endIndex; i++) {
+		char buff[200];
+		bool check = true;
+		if (digitalRead(dutPins[i].pcb_pin) == HIGH) {
+			check = false;
+		}
+		if (check)
+			sprintf(buff, "pin %d passed", dutPins[i].dut_test_pin);
+		else
+			sprintf(buff, "pin %d open", dutPins[i].dut_test_pin);
+
+		Serial.println(buff);
+		delay(5);
+	}
+
+	Serial.println("done");
+
 	return true;
 }
 
 bool MainController::runShortTest() {
-	return true;
+	sendToSignalController(SIG_CONTROLLER_ADDR, CLEAR_SIG_PINS);
+	delay(10);
+	for (int i = startIndex; i < endIndex; i++) {
+		PinMapping curr_pin = dutPins[i];
+		for (int ii = 0; ii < 40; ii++) {
+			pinMode(dutPins[ii].pcb_pin, INPUT_PULLUP);
+		}
+		pinMode(curr_pin.pcb_pin, OUTPUT);
+		digitalWrite(curr_pin.pcb_pin, LOW);
+		bool ret = true;
+		int j;
+		for (j = startIndex; j < endIndex; j++) {
+			if (i == j)
+				continue;
+			if (digitalRead(dutPins[j].pcb_pin) == LOW) {
+				ret = false;
+				break;
+			}
+		}
+		char buff[200];
+		if (ret) {
+			sprintf(buff, "pin %d no short", dutPins[i].dut_test_pin);
+			Serial.println(buff);
+		}
+		else {
+			sprintf(buff, "pin %d short with pin ", dutPins[i].dut_test_pin, dutPins[j].dut_test_pin);
+			Serial.println(buff);
+		}
+	}
+	Serial.println("done");
 }
 
 void MainController::sendToSignalController(int addr, int data) {
@@ -158,3 +218,4 @@ void MainController::testShortTest() {
 	}
 	delay(1000);
 }
+

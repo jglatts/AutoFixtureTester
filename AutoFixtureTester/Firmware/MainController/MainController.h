@@ -46,11 +46,14 @@ public:
     void testShortTest();
     void run();
 private:
+    void findIndicies();
     void runFullTest();
     bool runOpenTest();
     bool runShortTest();
     int startPin;
     int endPin;
+    int startIndex;
+    int endIndex;
     TestType testType;
     // only 40 pins - have 50 tht should get more headers
     // note phys pins are swapped from schematic 
