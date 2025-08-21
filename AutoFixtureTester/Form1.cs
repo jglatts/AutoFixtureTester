@@ -24,12 +24,14 @@ namespace AutoFixtureTester
         private SerialPort port;
         private int dutStartPin;
         private int dutEndPin;
-        
+        private readonly int startTestCmd;
+
         public Form1()
         {
             InitializeComponent();
             initSerialPort();
             initUIComponents();
+            startTestCmd = 69;
         }
 
         private void initUIComponents()
@@ -41,8 +43,8 @@ namespace AutoFixtureTester
         {
             string[] port_names = SerialPort.GetPortNames();
             port = new SerialPort();
-            port.WriteTimeout = 500;
-            port.ReadTimeout = 500;
+            port.WriteTimeout = 1500;
+            port.ReadTimeout = 1500;
             port.BaudRate = 115200;
             if (port_names.Length != 0)
             {
@@ -82,10 +84,19 @@ namespace AutoFixtureTester
             if (!checkPort())
                 return;
 
+            testComms();
+
             if (!runOpenTest())
                 return;
 
             runShortTest();
+        }
+
+        private void testComms()
+        {
+            port.WriteLine(startTestCmd + "");
+            string ret = port.ReadLine();
+            MessageBox.Show(ret);
         }
 
         private void btnRunShortTest_Click(object sender, EventArgs e)

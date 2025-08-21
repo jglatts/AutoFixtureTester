@@ -16,6 +16,8 @@
 
 #define SIG_CONTROLLER_ADDR 5
 
+#define PC_HOST_START_TEST  69
+
 typedef enum TestType {
     TEST_OPEN,
     TEST_SHORT,
@@ -30,7 +32,7 @@ typedef struct PinMapping {
 class MainController {
 public:
     bool init();
-    bool waitForCmd();
+    void waitForCmd();
     void sendToSignalController(int, int);
     void testComms(int);
 private:

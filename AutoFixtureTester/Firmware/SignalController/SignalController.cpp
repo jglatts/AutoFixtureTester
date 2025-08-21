@@ -10,4 +10,27 @@
 #include "Arduino.h"
 #include <Wire.h>
 
-void Sign
+int test_data = 0;
+
+void requestEvent() {
+	// data is requested 
+	// will run sig output here
+	Wire.write(test_data + 1);
+	Serial.println(test_data + 1);
+}
+
+void callBack(int size) {
+	// data is sent
+	while (Wire.available()) {
+		test_data = Wire.read();
+		Serial.print("got ");
+		Serial.println(test_data);
+	}
+}
+
+bool SignalController::init() {
+	Wire.begin(ADDR);
+	Wire.onRequest(requestEvent);
+	Wire.onReceive(callBack);
+	return true;
+}
