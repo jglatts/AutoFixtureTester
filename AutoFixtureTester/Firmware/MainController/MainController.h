@@ -16,7 +16,11 @@
 
 #define SIG_CONTROLLER_ADDR 5
 
-#define PC_HOST_START_TEST  69
+#define PC_HOST_START_OPEN_TEST   68
+#define PC_HOST_START_SHORT_TEST  69
+#define PC_HOST_START_FULL_TEST   70
+
+#define NUM_TEST_PINS 40    // only 40 headers soldered - use 50 when get more
 
 typedef enum TestType {
     TEST_OPEN,
@@ -25,8 +29,8 @@ typedef enum TestType {
 };
 
 typedef struct PinMapping {
-    int dut_test_pins[50];
-    int pcb_pins[50];
+    int dut_test_pin;
+    int pcb_pin;
 } PinMapping;
 
 class MainController {
@@ -35,12 +39,56 @@ public:
     void waitForCmd();
     void sendToSignalController(int, int);
     void testComms(int);
+    void testOpenTest();
+    void run();
 private:
+    void runFullTest();
+    bool runOpenTest();
+    bool runShortTest();
     TestType testType;
-    // need to fill out test pins here - probe out?
-    PinMapping dutPins = {
-        .dut_test_pins = {},
-        .pcb_pins = {}
+    // only 40 pins - have 50 tht should get more headers
+    // note phys pins are swapped from schematic 
+    PinMapping dutPins[NUM_TEST_PINS] = {
+        { 1, 3 },
+        { 2, 2 },
+        { 3, 5 },
+        { 4, 4 },
+        { 5, 7 },
+        { 6, 6 },
+        { 7, 9 },
+        { 8, 8 },
+        { 9, 11 },
+        { 10, 10 },
+        { 11, 13 },
+        { 12, 12 },
+        { 13, 23 },
+        { 14, 22 },
+        { 15, 25 },
+        { 16, 24 },
+        { 17, 27 },
+        { 18, 26 },
+        { 19, 29 },
+        { 20, 28 },
+        { 21, 31 },
+        { 22, 30 },
+        { 23, 33 },
+        { 24, 32 },
+        { 25, 35 },
+        { 26, 34 },
+        { 27, 37 },
+        { 28, 36 },
+        { 29, 39 },
+        { 30, 38 },
+        { 31, 41 },
+        { 32, 40 },
+        { 33, 43 },
+        { 34, 42 },
+        { 35, 45 },
+        { 36, 44 },
+        { 37, 47 },
+        { 38, 46 },
+        { 39, 49 },
+        { 40, 48 }
     };
 };
 

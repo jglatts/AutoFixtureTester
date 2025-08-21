@@ -17,6 +17,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
 
+/*
+ *  get nice working system in single thread
+ *  then branch of test sequences in sep. thread
+ */
+
 namespace AutoFixtureTester
 {
     public partial class Form1 : Form
@@ -24,14 +29,18 @@ namespace AutoFixtureTester
         private SerialPort port;
         private int dutStartPin;
         private int dutEndPin;
-        private readonly int startTestCmd;
+        private readonly int startOpenTestCmd;
+        private readonly int startShortTestCmd;
+        private readonly int startFullTestCmd;
 
         public Form1()
         {
             InitializeComponent();
             initSerialPort();
             initUIComponents();
-            startTestCmd = 69;
+            startOpenTestCmd = 68;
+            startShortTestCmd = 69;
+            startFullTestCmd = 70;
         }
 
         private void initUIComponents()
@@ -84,17 +93,23 @@ namespace AutoFixtureTester
             if (!checkPort())
                 return;
 
-            testComms();
-
-            if (!runOpenTest())
-                return;
-
-            runShortTest();
+            //sendCmd(startFullTestCmd);
+            testComms(startFullTestCmd);
+            runFullTest();
         }
 
-        private void testComms()
+        private void runFullTest()
+        { 
+            // will need data processing here
+        }
+
+        private void sendCmd(int cmd) {
+            port.WriteLine(cmd + "");
+        } 
+
+        private void testComms(int cmd)
         {
-            port.WriteLine(startTestCmd + "");
+            port.WriteLine(cmd + "");
             string ret = port.ReadLine();
             MessageBox.Show(ret);
         }
@@ -113,7 +128,10 @@ namespace AutoFixtureTester
 
             if (!checkPort())
                 return false;
-            
+
+            //sendCmd(startShortTestCmd);
+            testComms(startShortTestCmd);
+
             return ret;
         }
 
@@ -131,7 +149,10 @@ namespace AutoFixtureTester
 
             if (!checkPort())
                 return false;
-            
+
+            //sendCmd(startOpenTestCmd);
+            testComms(startOpenTestCmd);
+
             return ret;
         }
 
