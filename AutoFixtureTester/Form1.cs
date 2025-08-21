@@ -168,17 +168,24 @@ namespace AutoFixtureTester
                 }
                 else
                 {
-                    // better indexing here
-                    int short_pin = Int32.Parse(data[3].Trim());
-                    Control[] testPin = this.Controls.Find("textBoxPin" + pin, true);
-                    Control[] shortPin = this.Controls.Find("textBoxPin" + short_pin, true);
-                    if (testPin.Length > 0 && testPin[0] is TextBox tb)
+                    // debug this throwing on 1st call
+                    try
                     {
-                        tb.BackColor = Color.Red;
+                        int short_pin = Int32.Parse(data[3].Trim());
+                        Control[] testPin = this.Controls.Find("textBoxPin" + pin, true);
+                        Control[] shortPin = this.Controls.Find("textBoxPin" + short_pin, true);
+                        if (testPin.Length > 0 && testPin[0] is TextBox tb)
+                        {
+                            tb.BackColor = Color.Red;
+                        }
+                        if (shortPin.Length > 0 && shortPin[0] is TextBox t)
+                        {
+                            t.BackColor = Color.Red;
+                        }
                     }
-                    if (shortPin.Length > 0 && shortPin[0] is TextBox t)
+                    catch (Exception e) 
                     {
-                        t.BackColor = Color.Red;
+                        MessageBox.Show(e.ToString());
                     }
                 }
             }
