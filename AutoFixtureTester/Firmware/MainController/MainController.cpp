@@ -92,9 +92,9 @@ bool MainController::runOpenTest() {
 			check = false;
 		}
 		if (check)
-			sprintf(buff, "pin %d passed", dutPins[i].dut_test_pin);
+			sprintf(buff, "pin,%d,passed", dutPins[i].dut_test_pin);
 		else
-			sprintf(buff, "pin %d open", dutPins[i].dut_test_pin);
+			sprintf(buff, "pin,%d,open", dutPins[i].dut_test_pin);
 
 		Serial.println(buff);
 		delay(5);
@@ -127,11 +127,11 @@ bool MainController::runShortTest() {
 		}
 		char buff[200];
 		if (ret) {
-			sprintf(buff, "pin %d no short", dutPins[i].dut_test_pin);
+			sprintf(buff, "pin,%d,noshort", dutPins[i].dut_test_pin);
 			Serial.println(buff);
 		}
 		else {
-			sprintf(buff, "pin %d short with pin ", dutPins[i].dut_test_pin, dutPins[j].dut_test_pin);
+			sprintf(buff, "pin,%d,short,%d", dutPins[i].dut_test_pin, dutPins[j].dut_test_pin);
 			Serial.println(buff);
 		}
 	}

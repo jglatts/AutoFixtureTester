@@ -49,154 +49,154 @@ namespace AutoFixtureTester
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label52 = new System.Windows.Forms.Label();
-            this.textBox26 = new System.Windows.Forms.TextBox();
+            this.textBoxPin50 = new System.Windows.Forms.TextBox();
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
-            this.textBox27 = new System.Windows.Forms.TextBox();
+            this.textBoxPin49 = new System.Windows.Forms.TextBox();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
-            this.textBox28 = new System.Windows.Forms.TextBox();
+            this.textBoxPin48 = new System.Windows.Forms.TextBox();
             this.label57 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
-            this.textBox29 = new System.Windows.Forms.TextBox();
+            this.textBoxPin47 = new System.Windows.Forms.TextBox();
             this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
-            this.textBox30 = new System.Windows.Forms.TextBox();
+            this.textBoxPin46 = new System.Windows.Forms.TextBox();
             this.label61 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
-            this.textBox31 = new System.Windows.Forms.TextBox();
+            this.textBoxPin45 = new System.Windows.Forms.TextBox();
             this.label63 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
-            this.textBox32 = new System.Windows.Forms.TextBox();
+            this.textBoxPin44 = new System.Windows.Forms.TextBox();
             this.label65 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
-            this.textBox33 = new System.Windows.Forms.TextBox();
+            this.textBoxPin43 = new System.Windows.Forms.TextBox();
             this.label68 = new System.Windows.Forms.Label();
-            this.textBox34 = new System.Windows.Forms.TextBox();
+            this.textBoxPin42 = new System.Windows.Forms.TextBox();
             this.label69 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
-            this.textBox35 = new System.Windows.Forms.TextBox();
+            this.textBoxPin41 = new System.Windows.Forms.TextBox();
             this.label71 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
-            this.textBox36 = new System.Windows.Forms.TextBox();
+            this.textBoxPin40 = new System.Windows.Forms.TextBox();
             this.label73 = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
-            this.textBox37 = new System.Windows.Forms.TextBox();
+            this.textBoxPin39 = new System.Windows.Forms.TextBox();
             this.label75 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
-            this.textBox38 = new System.Windows.Forms.TextBox();
+            this.textBoxPin38 = new System.Windows.Forms.TextBox();
             this.label77 = new System.Windows.Forms.Label();
             this.label78 = new System.Windows.Forms.Label();
-            this.textBox39 = new System.Windows.Forms.TextBox();
+            this.textBoxPin37 = new System.Windows.Forms.TextBox();
             this.label79 = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
-            this.textBox40 = new System.Windows.Forms.TextBox();
+            this.textBoxPin36 = new System.Windows.Forms.TextBox();
             this.label81 = new System.Windows.Forms.Label();
             this.label82 = new System.Windows.Forms.Label();
-            this.textBox41 = new System.Windows.Forms.TextBox();
+            this.textBoxPin35 = new System.Windows.Forms.TextBox();
             this.label83 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
-            this.textBox42 = new System.Windows.Forms.TextBox();
+            this.textBoxPin34 = new System.Windows.Forms.TextBox();
             this.label85 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
             this.label87 = new System.Windows.Forms.Label();
-            this.textBox43 = new System.Windows.Forms.TextBox();
+            this.textBoxPin33 = new System.Windows.Forms.TextBox();
             this.label88 = new System.Windows.Forms.Label();
-            this.textBox44 = new System.Windows.Forms.TextBox();
+            this.textBoxPin32 = new System.Windows.Forms.TextBox();
             this.label89 = new System.Windows.Forms.Label();
             this.label90 = new System.Windows.Forms.Label();
-            this.textBox45 = new System.Windows.Forms.TextBox();
+            this.textBoxPin31 = new System.Windows.Forms.TextBox();
             this.label91 = new System.Windows.Forms.Label();
             this.label92 = new System.Windows.Forms.Label();
-            this.textBox46 = new System.Windows.Forms.TextBox();
+            this.textBoxPin30 = new System.Windows.Forms.TextBox();
             this.label93 = new System.Windows.Forms.Label();
             this.label94 = new System.Windows.Forms.Label();
-            this.textBox47 = new System.Windows.Forms.TextBox();
+            this.textBoxPin29 = new System.Windows.Forms.TextBox();
             this.label95 = new System.Windows.Forms.Label();
             this.label96 = new System.Windows.Forms.Label();
-            this.textBox48 = new System.Windows.Forms.TextBox();
+            this.textBoxPin28 = new System.Windows.Forms.TextBox();
             this.label97 = new System.Windows.Forms.Label();
             this.label98 = new System.Windows.Forms.Label();
-            this.textBox49 = new System.Windows.Forms.TextBox();
+            this.textBoxPin27 = new System.Windows.Forms.TextBox();
             this.label99 = new System.Windows.Forms.Label();
             this.label100 = new System.Windows.Forms.Label();
-            this.textBox50 = new System.Windows.Forms.TextBox();
+            this.textBoxPin26 = new System.Windows.Forms.TextBox();
             this.label101 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
-            this.textBox25 = new System.Windows.Forms.TextBox();
+            this.textBoxPin25 = new System.Windows.Forms.TextBox();
             this.label51 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBoxPin24 = new System.Windows.Forms.TextBox();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBoxPin23 = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.textBoxPin22 = new System.Windows.Forms.TextBox();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
-            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.textBoxPin21 = new System.Windows.Forms.TextBox();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
-            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.textBoxPin20 = new System.Windows.Forms.TextBox();
             this.label49 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBoxPin19 = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBoxPin18 = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBoxPin17 = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBoxPin16 = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBoxPin15 = new System.Windows.Forms.TextBox();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.textBoxPin14 = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBoxPin13 = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBoxPin12 = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBoxPin11 = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBoxPin10 = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBoxPin9 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBoxPin8 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBoxPin7 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBoxPin6 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxPin5 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxPin4 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxPin3 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxPin2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxPin1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnRunOpenTest = new System.Windows.Forms.Button();
@@ -228,159 +228,159 @@ namespace AutoFixtureTester
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label52);
-            this.groupBox1.Controls.Add(this.textBox26);
+            this.groupBox1.Controls.Add(this.textBoxPin50);
             this.groupBox1.Controls.Add(this.label53);
             this.groupBox1.Controls.Add(this.label54);
-            this.groupBox1.Controls.Add(this.textBox27);
+            this.groupBox1.Controls.Add(this.textBoxPin49);
             this.groupBox1.Controls.Add(this.label55);
             this.groupBox1.Controls.Add(this.label56);
-            this.groupBox1.Controls.Add(this.textBox28);
+            this.groupBox1.Controls.Add(this.textBoxPin48);
             this.groupBox1.Controls.Add(this.label57);
             this.groupBox1.Controls.Add(this.label58);
-            this.groupBox1.Controls.Add(this.textBox29);
+            this.groupBox1.Controls.Add(this.textBoxPin47);
             this.groupBox1.Controls.Add(this.label59);
             this.groupBox1.Controls.Add(this.label60);
-            this.groupBox1.Controls.Add(this.textBox30);
+            this.groupBox1.Controls.Add(this.textBoxPin46);
             this.groupBox1.Controls.Add(this.label61);
             this.groupBox1.Controls.Add(this.label62);
-            this.groupBox1.Controls.Add(this.textBox31);
+            this.groupBox1.Controls.Add(this.textBoxPin45);
             this.groupBox1.Controls.Add(this.label63);
             this.groupBox1.Controls.Add(this.label64);
-            this.groupBox1.Controls.Add(this.textBox32);
+            this.groupBox1.Controls.Add(this.textBoxPin44);
             this.groupBox1.Controls.Add(this.label65);
             this.groupBox1.Controls.Add(this.label66);
             this.groupBox1.Controls.Add(this.label67);
-            this.groupBox1.Controls.Add(this.textBox33);
+            this.groupBox1.Controls.Add(this.textBoxPin43);
             this.groupBox1.Controls.Add(this.label68);
-            this.groupBox1.Controls.Add(this.textBox34);
+            this.groupBox1.Controls.Add(this.textBoxPin42);
             this.groupBox1.Controls.Add(this.label69);
             this.groupBox1.Controls.Add(this.label70);
-            this.groupBox1.Controls.Add(this.textBox35);
+            this.groupBox1.Controls.Add(this.textBoxPin41);
             this.groupBox1.Controls.Add(this.label71);
             this.groupBox1.Controls.Add(this.label72);
-            this.groupBox1.Controls.Add(this.textBox36);
+            this.groupBox1.Controls.Add(this.textBoxPin40);
             this.groupBox1.Controls.Add(this.label73);
             this.groupBox1.Controls.Add(this.label74);
-            this.groupBox1.Controls.Add(this.textBox37);
+            this.groupBox1.Controls.Add(this.textBoxPin39);
             this.groupBox1.Controls.Add(this.label75);
             this.groupBox1.Controls.Add(this.label76);
-            this.groupBox1.Controls.Add(this.textBox38);
+            this.groupBox1.Controls.Add(this.textBoxPin38);
             this.groupBox1.Controls.Add(this.label77);
             this.groupBox1.Controls.Add(this.label78);
-            this.groupBox1.Controls.Add(this.textBox39);
+            this.groupBox1.Controls.Add(this.textBoxPin37);
             this.groupBox1.Controls.Add(this.label79);
             this.groupBox1.Controls.Add(this.label80);
-            this.groupBox1.Controls.Add(this.textBox40);
+            this.groupBox1.Controls.Add(this.textBoxPin36);
             this.groupBox1.Controls.Add(this.label81);
             this.groupBox1.Controls.Add(this.label82);
-            this.groupBox1.Controls.Add(this.textBox41);
+            this.groupBox1.Controls.Add(this.textBoxPin35);
             this.groupBox1.Controls.Add(this.label83);
             this.groupBox1.Controls.Add(this.label84);
-            this.groupBox1.Controls.Add(this.textBox42);
+            this.groupBox1.Controls.Add(this.textBoxPin34);
             this.groupBox1.Controls.Add(this.label85);
             this.groupBox1.Controls.Add(this.label86);
             this.groupBox1.Controls.Add(this.label87);
-            this.groupBox1.Controls.Add(this.textBox43);
+            this.groupBox1.Controls.Add(this.textBoxPin33);
             this.groupBox1.Controls.Add(this.label88);
-            this.groupBox1.Controls.Add(this.textBox44);
+            this.groupBox1.Controls.Add(this.textBoxPin32);
             this.groupBox1.Controls.Add(this.label89);
             this.groupBox1.Controls.Add(this.label90);
-            this.groupBox1.Controls.Add(this.textBox45);
+            this.groupBox1.Controls.Add(this.textBoxPin31);
             this.groupBox1.Controls.Add(this.label91);
             this.groupBox1.Controls.Add(this.label92);
-            this.groupBox1.Controls.Add(this.textBox46);
+            this.groupBox1.Controls.Add(this.textBoxPin30);
             this.groupBox1.Controls.Add(this.label93);
             this.groupBox1.Controls.Add(this.label94);
-            this.groupBox1.Controls.Add(this.textBox47);
+            this.groupBox1.Controls.Add(this.textBoxPin29);
             this.groupBox1.Controls.Add(this.label95);
             this.groupBox1.Controls.Add(this.label96);
-            this.groupBox1.Controls.Add(this.textBox48);
+            this.groupBox1.Controls.Add(this.textBoxPin28);
             this.groupBox1.Controls.Add(this.label97);
             this.groupBox1.Controls.Add(this.label98);
-            this.groupBox1.Controls.Add(this.textBox49);
+            this.groupBox1.Controls.Add(this.textBoxPin27);
             this.groupBox1.Controls.Add(this.label99);
             this.groupBox1.Controls.Add(this.label100);
-            this.groupBox1.Controls.Add(this.textBox50);
+            this.groupBox1.Controls.Add(this.textBoxPin26);
             this.groupBox1.Controls.Add(this.label101);
             this.groupBox1.Controls.Add(this.label50);
-            this.groupBox1.Controls.Add(this.textBox25);
+            this.groupBox1.Controls.Add(this.textBoxPin25);
             this.groupBox1.Controls.Add(this.label51);
             this.groupBox1.Controls.Add(this.label40);
-            this.groupBox1.Controls.Add(this.textBox20);
+            this.groupBox1.Controls.Add(this.textBoxPin24);
             this.groupBox1.Controls.Add(this.label41);
             this.groupBox1.Controls.Add(this.label42);
-            this.groupBox1.Controls.Add(this.textBox21);
+            this.groupBox1.Controls.Add(this.textBoxPin23);
             this.groupBox1.Controls.Add(this.label43);
             this.groupBox1.Controls.Add(this.label44);
-            this.groupBox1.Controls.Add(this.textBox22);
+            this.groupBox1.Controls.Add(this.textBoxPin22);
             this.groupBox1.Controls.Add(this.label45);
             this.groupBox1.Controls.Add(this.label46);
-            this.groupBox1.Controls.Add(this.textBox23);
+            this.groupBox1.Controls.Add(this.textBoxPin21);
             this.groupBox1.Controls.Add(this.label47);
             this.groupBox1.Controls.Add(this.label48);
-            this.groupBox1.Controls.Add(this.textBox24);
+            this.groupBox1.Controls.Add(this.textBoxPin20);
             this.groupBox1.Controls.Add(this.label49);
             this.groupBox1.Controls.Add(this.label26);
-            this.groupBox1.Controls.Add(this.textBox13);
+            this.groupBox1.Controls.Add(this.textBoxPin19);
             this.groupBox1.Controls.Add(this.label27);
             this.groupBox1.Controls.Add(this.label28);
             this.groupBox1.Controls.Add(this.label29);
-            this.groupBox1.Controls.Add(this.textBox14);
+            this.groupBox1.Controls.Add(this.textBoxPin18);
             this.groupBox1.Controls.Add(this.label30);
-            this.groupBox1.Controls.Add(this.textBox15);
+            this.groupBox1.Controls.Add(this.textBoxPin17);
             this.groupBox1.Controls.Add(this.label31);
             this.groupBox1.Controls.Add(this.label32);
-            this.groupBox1.Controls.Add(this.textBox16);
+            this.groupBox1.Controls.Add(this.textBoxPin16);
             this.groupBox1.Controls.Add(this.label33);
             this.groupBox1.Controls.Add(this.label34);
-            this.groupBox1.Controls.Add(this.textBox17);
+            this.groupBox1.Controls.Add(this.textBoxPin15);
             this.groupBox1.Controls.Add(this.label35);
             this.groupBox1.Controls.Add(this.label36);
-            this.groupBox1.Controls.Add(this.textBox18);
+            this.groupBox1.Controls.Add(this.textBoxPin14);
             this.groupBox1.Controls.Add(this.label37);
             this.groupBox1.Controls.Add(this.label38);
-            this.groupBox1.Controls.Add(this.textBox19);
+            this.groupBox1.Controls.Add(this.textBoxPin13);
             this.groupBox1.Controls.Add(this.label39);
             this.groupBox1.Controls.Add(this.label24);
-            this.groupBox1.Controls.Add(this.textBox12);
+            this.groupBox1.Controls.Add(this.textBoxPin12);
             this.groupBox1.Controls.Add(this.label25);
             this.groupBox1.Controls.Add(this.label22);
-            this.groupBox1.Controls.Add(this.textBox11);
+            this.groupBox1.Controls.Add(this.textBoxPin11);
             this.groupBox1.Controls.Add(this.label23);
             this.groupBox1.Controls.Add(this.label20);
-            this.groupBox1.Controls.Add(this.textBox10);
+            this.groupBox1.Controls.Add(this.textBoxPin10);
             this.groupBox1.Controls.Add(this.label21);
             this.groupBox1.Controls.Add(this.label18);
-            this.groupBox1.Controls.Add(this.textBox9);
+            this.groupBox1.Controls.Add(this.textBoxPin9);
             this.groupBox1.Controls.Add(this.label19);
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.textBox8);
+            this.groupBox1.Controls.Add(this.textBoxPin8);
             this.groupBox1.Controls.Add(this.label17);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.textBoxPin7);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.textBoxPin6);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.textBoxPin5);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.textBoxPin4);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.textBoxPin3);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.textBoxPin2);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textBoxPin1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(20, 76);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(498, 463);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
@@ -397,16 +397,16 @@ namespace AutoFixtureTester
             this.label52.TabIndex = 146;
             this.label52.Text = "OL";
             // 
-            // textBox26
+            // textBoxPin50
             // 
-            this.textBox26.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox26.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox26.Enabled = false;
-            this.textBox26.Location = new System.Drawing.Point(283, 439);
-            this.textBox26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(173, 13);
-            this.textBox26.TabIndex = 145;
+            this.textBoxPin50.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin50.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin50.Enabled = false;
+            this.textBoxPin50.Location = new System.Drawing.Point(283, 439);
+            this.textBoxPin50.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin50.Name = "textBoxPin50";
+            this.textBoxPin50.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin50.TabIndex = 145;
             // 
             // label53
             // 
@@ -428,16 +428,16 @@ namespace AutoFixtureTester
             this.label54.TabIndex = 143;
             this.label54.Text = "OL";
             // 
-            // textBox27
+            // textBoxPin49
             // 
-            this.textBox27.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox27.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox27.Enabled = false;
-            this.textBox27.Location = new System.Drawing.Point(284, 419);
-            this.textBox27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(173, 13);
-            this.textBox27.TabIndex = 142;
+            this.textBoxPin49.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin49.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin49.Enabled = false;
+            this.textBoxPin49.Location = new System.Drawing.Point(284, 419);
+            this.textBoxPin49.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin49.Name = "textBoxPin49";
+            this.textBoxPin49.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin49.TabIndex = 142;
             // 
             // label55
             // 
@@ -459,16 +459,16 @@ namespace AutoFixtureTester
             this.label56.TabIndex = 140;
             this.label56.Text = "OL";
             // 
-            // textBox28
+            // textBoxPin48
             // 
-            this.textBox28.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox28.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox28.Enabled = false;
-            this.textBox28.Location = new System.Drawing.Point(284, 402);
-            this.textBox28.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(173, 13);
-            this.textBox28.TabIndex = 139;
+            this.textBoxPin48.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin48.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin48.Enabled = false;
+            this.textBoxPin48.Location = new System.Drawing.Point(284, 402);
+            this.textBoxPin48.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin48.Name = "textBoxPin48";
+            this.textBoxPin48.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin48.TabIndex = 139;
             // 
             // label57
             // 
@@ -490,16 +490,16 @@ namespace AutoFixtureTester
             this.label58.TabIndex = 137;
             this.label58.Text = "OL";
             // 
-            // textBox29
+            // textBoxPin47
             // 
-            this.textBox29.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox29.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox29.Enabled = false;
-            this.textBox29.Location = new System.Drawing.Point(284, 385);
-            this.textBox29.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(173, 13);
-            this.textBox29.TabIndex = 136;
+            this.textBoxPin47.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin47.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin47.Enabled = false;
+            this.textBoxPin47.Location = new System.Drawing.Point(284, 385);
+            this.textBoxPin47.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin47.Name = "textBoxPin47";
+            this.textBoxPin47.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin47.TabIndex = 136;
             // 
             // label59
             // 
@@ -521,16 +521,16 @@ namespace AutoFixtureTester
             this.label60.TabIndex = 134;
             this.label60.Text = "OL";
             // 
-            // textBox30
+            // textBoxPin46
             // 
-            this.textBox30.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox30.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox30.Enabled = false;
-            this.textBox30.Location = new System.Drawing.Point(284, 368);
-            this.textBox30.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(173, 13);
-            this.textBox30.TabIndex = 133;
+            this.textBoxPin46.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin46.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin46.Enabled = false;
+            this.textBoxPin46.Location = new System.Drawing.Point(284, 368);
+            this.textBoxPin46.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin46.Name = "textBoxPin46";
+            this.textBoxPin46.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin46.TabIndex = 133;
             // 
             // label61
             // 
@@ -552,16 +552,16 @@ namespace AutoFixtureTester
             this.label62.TabIndex = 131;
             this.label62.Text = "OL";
             // 
-            // textBox31
+            // textBoxPin45
             // 
-            this.textBox31.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox31.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox31.Enabled = false;
-            this.textBox31.Location = new System.Drawing.Point(284, 351);
-            this.textBox31.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox31.Name = "textBox31";
-            this.textBox31.Size = new System.Drawing.Size(173, 13);
-            this.textBox31.TabIndex = 130;
+            this.textBoxPin45.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin45.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin45.Enabled = false;
+            this.textBoxPin45.Location = new System.Drawing.Point(284, 351);
+            this.textBoxPin45.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin45.Name = "textBoxPin45";
+            this.textBoxPin45.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin45.TabIndex = 130;
             // 
             // label63
             // 
@@ -583,16 +583,16 @@ namespace AutoFixtureTester
             this.label64.TabIndex = 128;
             this.label64.Text = "OL";
             // 
-            // textBox32
+            // textBoxPin44
             // 
-            this.textBox32.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox32.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox32.Enabled = false;
-            this.textBox32.Location = new System.Drawing.Point(285, 334);
-            this.textBox32.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox32.Name = "textBox32";
-            this.textBox32.Size = new System.Drawing.Size(173, 13);
-            this.textBox32.TabIndex = 127;
+            this.textBoxPin44.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin44.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin44.Enabled = false;
+            this.textBoxPin44.Location = new System.Drawing.Point(285, 334);
+            this.textBoxPin44.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin44.Name = "textBoxPin44";
+            this.textBoxPin44.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin44.TabIndex = 127;
             // 
             // label65
             // 
@@ -624,16 +624,16 @@ namespace AutoFixtureTester
             this.label67.TabIndex = 125;
             this.label67.Text = "OL";
             // 
-            // textBox33
+            // textBoxPin43
             // 
-            this.textBox33.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox33.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox33.Enabled = false;
-            this.textBox33.Location = new System.Drawing.Point(285, 317);
-            this.textBox33.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox33.Name = "textBox33";
-            this.textBox33.Size = new System.Drawing.Size(173, 13);
-            this.textBox33.TabIndex = 109;
+            this.textBoxPin43.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin43.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin43.Enabled = false;
+            this.textBoxPin43.Location = new System.Drawing.Point(285, 317);
+            this.textBoxPin43.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin43.Name = "textBoxPin43";
+            this.textBoxPin43.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin43.TabIndex = 109;
             // 
             // label68
             // 
@@ -645,16 +645,16 @@ namespace AutoFixtureTester
             this.label68.TabIndex = 108;
             this.label68.Text = "43";
             // 
-            // textBox34
+            // textBoxPin42
             // 
-            this.textBox34.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox34.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox34.Enabled = false;
-            this.textBox34.Location = new System.Drawing.Point(285, 300);
-            this.textBox34.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(173, 13);
-            this.textBox34.TabIndex = 124;
+            this.textBoxPin42.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin42.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin42.Enabled = false;
+            this.textBoxPin42.Location = new System.Drawing.Point(285, 300);
+            this.textBoxPin42.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin42.Name = "textBoxPin42";
+            this.textBoxPin42.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin42.TabIndex = 124;
             // 
             // label69
             // 
@@ -676,16 +676,16 @@ namespace AutoFixtureTester
             this.label70.TabIndex = 122;
             this.label70.Text = "OL";
             // 
-            // textBox35
+            // textBoxPin41
             // 
-            this.textBox35.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox35.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox35.Enabled = false;
-            this.textBox35.Location = new System.Drawing.Point(285, 283);
-            this.textBox35.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(173, 13);
-            this.textBox35.TabIndex = 121;
+            this.textBoxPin41.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin41.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin41.Enabled = false;
+            this.textBoxPin41.Location = new System.Drawing.Point(285, 283);
+            this.textBoxPin41.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin41.Name = "textBoxPin41";
+            this.textBoxPin41.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin41.TabIndex = 121;
             // 
             // label71
             // 
@@ -707,16 +707,16 @@ namespace AutoFixtureTester
             this.label72.TabIndex = 119;
             this.label72.Text = "OL";
             // 
-            // textBox36
+            // textBoxPin40
             // 
-            this.textBox36.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox36.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox36.Enabled = false;
-            this.textBox36.Location = new System.Drawing.Point(285, 266);
-            this.textBox36.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(173, 13);
-            this.textBox36.TabIndex = 118;
+            this.textBoxPin40.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin40.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin40.Enabled = false;
+            this.textBoxPin40.Location = new System.Drawing.Point(285, 266);
+            this.textBoxPin40.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin40.Name = "textBoxPin40";
+            this.textBoxPin40.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin40.TabIndex = 118;
             // 
             // label73
             // 
@@ -738,16 +738,16 @@ namespace AutoFixtureTester
             this.label74.TabIndex = 116;
             this.label74.Text = "OL";
             // 
-            // textBox37
+            // textBoxPin39
             // 
-            this.textBox37.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox37.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox37.Enabled = false;
-            this.textBox37.Location = new System.Drawing.Point(285, 249);
-            this.textBox37.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(173, 13);
-            this.textBox37.TabIndex = 115;
+            this.textBoxPin39.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin39.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin39.Enabled = false;
+            this.textBoxPin39.Location = new System.Drawing.Point(285, 249);
+            this.textBoxPin39.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin39.Name = "textBoxPin39";
+            this.textBoxPin39.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin39.TabIndex = 115;
             // 
             // label75
             // 
@@ -769,16 +769,16 @@ namespace AutoFixtureTester
             this.label76.TabIndex = 113;
             this.label76.Text = "OL";
             // 
-            // textBox38
+            // textBoxPin38
             // 
-            this.textBox38.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox38.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox38.Enabled = false;
-            this.textBox38.Location = new System.Drawing.Point(285, 232);
-            this.textBox38.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(173, 13);
-            this.textBox38.TabIndex = 112;
+            this.textBoxPin38.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin38.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin38.Enabled = false;
+            this.textBoxPin38.Location = new System.Drawing.Point(285, 232);
+            this.textBoxPin38.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin38.Name = "textBoxPin38";
+            this.textBoxPin38.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin38.TabIndex = 112;
             // 
             // label77
             // 
@@ -800,16 +800,16 @@ namespace AutoFixtureTester
             this.label78.TabIndex = 107;
             this.label78.Text = "OL";
             // 
-            // textBox39
+            // textBoxPin37
             // 
-            this.textBox39.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox39.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox39.Enabled = false;
-            this.textBox39.Location = new System.Drawing.Point(284, 215);
-            this.textBox39.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(173, 13);
-            this.textBox39.TabIndex = 106;
+            this.textBoxPin37.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin37.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin37.Enabled = false;
+            this.textBoxPin37.Location = new System.Drawing.Point(284, 215);
+            this.textBoxPin37.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin37.Name = "textBoxPin37";
+            this.textBoxPin37.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin37.TabIndex = 106;
             // 
             // label79
             // 
@@ -831,16 +831,16 @@ namespace AutoFixtureTester
             this.label80.TabIndex = 104;
             this.label80.Text = "OL";
             // 
-            // textBox40
+            // textBoxPin36
             // 
-            this.textBox40.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox40.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox40.Enabled = false;
-            this.textBox40.Location = new System.Drawing.Point(284, 198);
-            this.textBox40.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(173, 13);
-            this.textBox40.TabIndex = 103;
+            this.textBoxPin36.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin36.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin36.Enabled = false;
+            this.textBoxPin36.Location = new System.Drawing.Point(284, 198);
+            this.textBoxPin36.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin36.Name = "textBoxPin36";
+            this.textBoxPin36.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin36.TabIndex = 103;
             // 
             // label81
             // 
@@ -862,16 +862,16 @@ namespace AutoFixtureTester
             this.label82.TabIndex = 101;
             this.label82.Text = "OL";
             // 
-            // textBox41
+            // textBoxPin35
             // 
-            this.textBox41.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox41.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox41.Enabled = false;
-            this.textBox41.Location = new System.Drawing.Point(284, 181);
-            this.textBox41.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox41.Name = "textBox41";
-            this.textBox41.Size = new System.Drawing.Size(173, 13);
-            this.textBox41.TabIndex = 100;
+            this.textBoxPin35.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin35.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin35.Enabled = false;
+            this.textBoxPin35.Location = new System.Drawing.Point(284, 181);
+            this.textBoxPin35.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin35.Name = "textBoxPin35";
+            this.textBoxPin35.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin35.TabIndex = 100;
             // 
             // label83
             // 
@@ -893,16 +893,16 @@ namespace AutoFixtureTester
             this.label84.TabIndex = 98;
             this.label84.Text = "OL";
             // 
-            // textBox42
+            // textBoxPin34
             // 
-            this.textBox42.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox42.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox42.Enabled = false;
-            this.textBox42.Location = new System.Drawing.Point(284, 164);
-            this.textBox42.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(173, 13);
-            this.textBox42.TabIndex = 97;
+            this.textBoxPin34.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin34.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin34.Enabled = false;
+            this.textBoxPin34.Location = new System.Drawing.Point(284, 164);
+            this.textBoxPin34.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin34.Name = "textBoxPin34";
+            this.textBoxPin34.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin34.TabIndex = 97;
             // 
             // label85
             // 
@@ -934,16 +934,16 @@ namespace AutoFixtureTester
             this.label87.TabIndex = 95;
             this.label87.Text = "OL";
             // 
-            // textBox43
+            // textBoxPin33
             // 
-            this.textBox43.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox43.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox43.Enabled = false;
-            this.textBox43.Location = new System.Drawing.Point(284, 147);
-            this.textBox43.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(173, 13);
-            this.textBox43.TabIndex = 78;
+            this.textBoxPin33.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin33.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin33.Enabled = false;
+            this.textBoxPin33.Location = new System.Drawing.Point(284, 147);
+            this.textBoxPin33.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin33.Name = "textBoxPin33";
+            this.textBoxPin33.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin33.TabIndex = 78;
             // 
             // label88
             // 
@@ -955,16 +955,16 @@ namespace AutoFixtureTester
             this.label88.TabIndex = 75;
             this.label88.Text = "33";
             // 
-            // textBox44
+            // textBoxPin32
             // 
-            this.textBox44.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox44.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox44.Enabled = false;
-            this.textBox44.Location = new System.Drawing.Point(284, 130);
-            this.textBox44.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(173, 13);
-            this.textBox44.TabIndex = 94;
+            this.textBoxPin32.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin32.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin32.Enabled = false;
+            this.textBoxPin32.Location = new System.Drawing.Point(284, 130);
+            this.textBoxPin32.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin32.Name = "textBoxPin32";
+            this.textBoxPin32.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin32.TabIndex = 94;
             // 
             // label89
             // 
@@ -986,16 +986,16 @@ namespace AutoFixtureTester
             this.label90.TabIndex = 92;
             this.label90.Text = "OL";
             // 
-            // textBox45
+            // textBoxPin31
             // 
-            this.textBox45.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox45.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox45.Enabled = false;
-            this.textBox45.Location = new System.Drawing.Point(284, 113);
-            this.textBox45.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox45.Name = "textBox45";
-            this.textBox45.Size = new System.Drawing.Size(173, 13);
-            this.textBox45.TabIndex = 91;
+            this.textBoxPin31.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin31.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin31.Enabled = false;
+            this.textBoxPin31.Location = new System.Drawing.Point(284, 113);
+            this.textBoxPin31.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin31.Name = "textBoxPin31";
+            this.textBoxPin31.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin31.TabIndex = 91;
             // 
             // label91
             // 
@@ -1017,16 +1017,16 @@ namespace AutoFixtureTester
             this.label92.TabIndex = 89;
             this.label92.Text = "OL";
             // 
-            // textBox46
+            // textBoxPin30
             // 
-            this.textBox46.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox46.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox46.Enabled = false;
-            this.textBox46.Location = new System.Drawing.Point(284, 96);
-            this.textBox46.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox46.Name = "textBox46";
-            this.textBox46.Size = new System.Drawing.Size(173, 13);
-            this.textBox46.TabIndex = 88;
+            this.textBoxPin30.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin30.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin30.Enabled = false;
+            this.textBoxPin30.Location = new System.Drawing.Point(284, 96);
+            this.textBoxPin30.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin30.Name = "textBoxPin30";
+            this.textBoxPin30.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin30.TabIndex = 88;
             // 
             // label93
             // 
@@ -1048,16 +1048,16 @@ namespace AutoFixtureTester
             this.label94.TabIndex = 86;
             this.label94.Text = "OL";
             // 
-            // textBox47
+            // textBoxPin29
             // 
-            this.textBox47.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox47.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox47.Enabled = false;
-            this.textBox47.Location = new System.Drawing.Point(284, 79);
-            this.textBox47.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox47.Name = "textBox47";
-            this.textBox47.Size = new System.Drawing.Size(173, 13);
-            this.textBox47.TabIndex = 85;
+            this.textBoxPin29.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin29.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin29.Enabled = false;
+            this.textBoxPin29.Location = new System.Drawing.Point(284, 79);
+            this.textBoxPin29.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin29.Name = "textBoxPin29";
+            this.textBoxPin29.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin29.TabIndex = 85;
             // 
             // label95
             // 
@@ -1067,7 +1067,7 @@ namespace AutoFixtureTester
             this.label95.Name = "label95";
             this.label95.Size = new System.Drawing.Size(19, 13);
             this.label95.TabIndex = 84;
-            this.label95.Text = "39";
+            this.label95.Text = "29";
             // 
             // label96
             // 
@@ -1079,16 +1079,16 @@ namespace AutoFixtureTester
             this.label96.TabIndex = 83;
             this.label96.Text = "OL";
             // 
-            // textBox48
+            // textBoxPin28
             // 
-            this.textBox48.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox48.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox48.Enabled = false;
-            this.textBox48.Location = new System.Drawing.Point(284, 62);
-            this.textBox48.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox48.Name = "textBox48";
-            this.textBox48.Size = new System.Drawing.Size(173, 13);
-            this.textBox48.TabIndex = 82;
+            this.textBoxPin28.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin28.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin28.Enabled = false;
+            this.textBoxPin28.Location = new System.Drawing.Point(284, 62);
+            this.textBoxPin28.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin28.Name = "textBoxPin28";
+            this.textBoxPin28.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin28.TabIndex = 82;
             // 
             // label97
             // 
@@ -1110,16 +1110,16 @@ namespace AutoFixtureTester
             this.label98.TabIndex = 80;
             this.label98.Text = "OL";
             // 
-            // textBox49
+            // textBoxPin27
             // 
-            this.textBox49.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox49.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox49.Enabled = false;
-            this.textBox49.Location = new System.Drawing.Point(284, 45);
-            this.textBox49.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox49.Name = "textBox49";
-            this.textBox49.Size = new System.Drawing.Size(173, 13);
-            this.textBox49.TabIndex = 77;
+            this.textBoxPin27.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin27.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin27.Enabled = false;
+            this.textBoxPin27.Location = new System.Drawing.Point(284, 45);
+            this.textBoxPin27.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin27.Name = "textBoxPin27";
+            this.textBoxPin27.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin27.TabIndex = 77;
             // 
             // label99
             // 
@@ -1141,16 +1141,16 @@ namespace AutoFixtureTester
             this.label100.TabIndex = 74;
             this.label100.Text = "OL";
             // 
-            // textBox50
+            // textBoxPin26
             // 
-            this.textBox50.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox50.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox50.Enabled = false;
-            this.textBox50.Location = new System.Drawing.Point(284, 28);
-            this.textBox50.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox50.Name = "textBox50";
-            this.textBox50.Size = new System.Drawing.Size(173, 13);
-            this.textBox50.TabIndex = 73;
+            this.textBoxPin26.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin26.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin26.Enabled = false;
+            this.textBoxPin26.Location = new System.Drawing.Point(284, 28);
+            this.textBoxPin26.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin26.Name = "textBoxPin26";
+            this.textBoxPin26.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin26.TabIndex = 73;
             // 
             // label101
             // 
@@ -1172,16 +1172,16 @@ namespace AutoFixtureTester
             this.label50.TabIndex = 71;
             this.label50.Text = "OL";
             // 
-            // textBox25
+            // textBoxPin25
             // 
-            this.textBox25.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox25.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox25.Enabled = false;
-            this.textBox25.Location = new System.Drawing.Point(28, 436);
-            this.textBox25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(173, 13);
-            this.textBox25.TabIndex = 70;
+            this.textBoxPin25.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin25.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin25.Enabled = false;
+            this.textBoxPin25.Location = new System.Drawing.Point(28, 436);
+            this.textBoxPin25.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin25.Name = "textBoxPin25";
+            this.textBoxPin25.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin25.TabIndex = 70;
             // 
             // label51
             // 
@@ -1203,16 +1203,16 @@ namespace AutoFixtureTester
             this.label40.TabIndex = 68;
             this.label40.Text = "OL";
             // 
-            // textBox20
+            // textBoxPin24
             // 
-            this.textBox20.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox20.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox20.Enabled = false;
-            this.textBox20.Location = new System.Drawing.Point(29, 416);
-            this.textBox20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(173, 13);
-            this.textBox20.TabIndex = 67;
+            this.textBoxPin24.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin24.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin24.Enabled = false;
+            this.textBoxPin24.Location = new System.Drawing.Point(29, 416);
+            this.textBoxPin24.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin24.Name = "textBoxPin24";
+            this.textBoxPin24.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin24.TabIndex = 67;
             // 
             // label41
             // 
@@ -1234,16 +1234,16 @@ namespace AutoFixtureTester
             this.label42.TabIndex = 65;
             this.label42.Text = "OL";
             // 
-            // textBox21
+            // textBoxPin23
             // 
-            this.textBox21.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox21.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox21.Enabled = false;
-            this.textBox21.Location = new System.Drawing.Point(29, 399);
-            this.textBox21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(173, 13);
-            this.textBox21.TabIndex = 64;
+            this.textBoxPin23.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin23.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin23.Enabled = false;
+            this.textBoxPin23.Location = new System.Drawing.Point(29, 399);
+            this.textBoxPin23.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin23.Name = "textBoxPin23";
+            this.textBoxPin23.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin23.TabIndex = 64;
             // 
             // label43
             // 
@@ -1265,16 +1265,16 @@ namespace AutoFixtureTester
             this.label44.TabIndex = 62;
             this.label44.Text = "OL";
             // 
-            // textBox22
+            // textBoxPin22
             // 
-            this.textBox22.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox22.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox22.Enabled = false;
-            this.textBox22.Location = new System.Drawing.Point(29, 382);
-            this.textBox22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(173, 13);
-            this.textBox22.TabIndex = 61;
+            this.textBoxPin22.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin22.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin22.Enabled = false;
+            this.textBoxPin22.Location = new System.Drawing.Point(29, 382);
+            this.textBoxPin22.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin22.Name = "textBoxPin22";
+            this.textBoxPin22.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin22.TabIndex = 61;
             // 
             // label45
             // 
@@ -1296,16 +1296,16 @@ namespace AutoFixtureTester
             this.label46.TabIndex = 59;
             this.label46.Text = "OL";
             // 
-            // textBox23
+            // textBoxPin21
             // 
-            this.textBox23.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox23.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox23.Enabled = false;
-            this.textBox23.Location = new System.Drawing.Point(29, 365);
-            this.textBox23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(173, 13);
-            this.textBox23.TabIndex = 58;
+            this.textBoxPin21.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin21.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin21.Enabled = false;
+            this.textBoxPin21.Location = new System.Drawing.Point(29, 365);
+            this.textBoxPin21.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin21.Name = "textBoxPin21";
+            this.textBoxPin21.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin21.TabIndex = 58;
             // 
             // label47
             // 
@@ -1327,16 +1327,16 @@ namespace AutoFixtureTester
             this.label48.TabIndex = 56;
             this.label48.Text = "OL";
             // 
-            // textBox24
+            // textBoxPin20
             // 
-            this.textBox24.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox24.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox24.Enabled = false;
-            this.textBox24.Location = new System.Drawing.Point(29, 348);
-            this.textBox24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(173, 13);
-            this.textBox24.TabIndex = 55;
+            this.textBoxPin20.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin20.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin20.Enabled = false;
+            this.textBoxPin20.Location = new System.Drawing.Point(29, 348);
+            this.textBoxPin20.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin20.Name = "textBoxPin20";
+            this.textBoxPin20.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin20.TabIndex = 55;
             // 
             // label49
             // 
@@ -1358,16 +1358,16 @@ namespace AutoFixtureTester
             this.label26.TabIndex = 53;
             this.label26.Text = "OL";
             // 
-            // textBox13
+            // textBoxPin19
             // 
-            this.textBox13.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox13.Enabled = false;
-            this.textBox13.Location = new System.Drawing.Point(30, 331);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(173, 13);
-            this.textBox13.TabIndex = 52;
+            this.textBoxPin19.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin19.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin19.Enabled = false;
+            this.textBoxPin19.Location = new System.Drawing.Point(30, 331);
+            this.textBoxPin19.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin19.Name = "textBoxPin19";
+            this.textBoxPin19.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin19.TabIndex = 52;
             // 
             // label27
             // 
@@ -1399,16 +1399,16 @@ namespace AutoFixtureTester
             this.label29.TabIndex = 50;
             this.label29.Text = "OL";
             // 
-            // textBox14
+            // textBoxPin18
             // 
-            this.textBox14.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox14.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox14.Enabled = false;
-            this.textBox14.Location = new System.Drawing.Point(30, 314);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(173, 13);
-            this.textBox14.TabIndex = 34;
+            this.textBoxPin18.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin18.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin18.Enabled = false;
+            this.textBoxPin18.Location = new System.Drawing.Point(30, 314);
+            this.textBoxPin18.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin18.Name = "textBoxPin18";
+            this.textBoxPin18.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin18.TabIndex = 34;
             // 
             // label30
             // 
@@ -1420,16 +1420,16 @@ namespace AutoFixtureTester
             this.label30.TabIndex = 33;
             this.label30.Text = "18";
             // 
-            // textBox15
+            // textBoxPin17
             // 
-            this.textBox15.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox15.Enabled = false;
-            this.textBox15.Location = new System.Drawing.Point(30, 297);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(173, 13);
-            this.textBox15.TabIndex = 49;
+            this.textBoxPin17.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin17.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin17.Enabled = false;
+            this.textBoxPin17.Location = new System.Drawing.Point(30, 297);
+            this.textBoxPin17.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin17.Name = "textBoxPin17";
+            this.textBoxPin17.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin17.TabIndex = 49;
             // 
             // label31
             // 
@@ -1451,16 +1451,16 @@ namespace AutoFixtureTester
             this.label32.TabIndex = 47;
             this.label32.Text = "OL";
             // 
-            // textBox16
+            // textBoxPin16
             // 
-            this.textBox16.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox16.Enabled = false;
-            this.textBox16.Location = new System.Drawing.Point(30, 280);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(173, 13);
-            this.textBox16.TabIndex = 46;
+            this.textBoxPin16.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin16.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin16.Enabled = false;
+            this.textBoxPin16.Location = new System.Drawing.Point(30, 280);
+            this.textBoxPin16.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin16.Name = "textBoxPin16";
+            this.textBoxPin16.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin16.TabIndex = 46;
             // 
             // label33
             // 
@@ -1482,16 +1482,16 @@ namespace AutoFixtureTester
             this.label34.TabIndex = 44;
             this.label34.Text = "OL";
             // 
-            // textBox17
+            // textBoxPin15
             // 
-            this.textBox17.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox17.Enabled = false;
-            this.textBox17.Location = new System.Drawing.Point(30, 263);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(173, 13);
-            this.textBox17.TabIndex = 43;
+            this.textBoxPin15.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin15.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin15.Enabled = false;
+            this.textBoxPin15.Location = new System.Drawing.Point(30, 263);
+            this.textBoxPin15.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin15.Name = "textBoxPin15";
+            this.textBoxPin15.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin15.TabIndex = 43;
             // 
             // label35
             // 
@@ -1513,16 +1513,16 @@ namespace AutoFixtureTester
             this.label36.TabIndex = 41;
             this.label36.Text = "OL";
             // 
-            // textBox18
+            // textBoxPin14
             // 
-            this.textBox18.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox18.Enabled = false;
-            this.textBox18.Location = new System.Drawing.Point(30, 246);
-            this.textBox18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(173, 13);
-            this.textBox18.TabIndex = 40;
+            this.textBoxPin14.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin14.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin14.Enabled = false;
+            this.textBoxPin14.Location = new System.Drawing.Point(30, 246);
+            this.textBoxPin14.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin14.Name = "textBoxPin14";
+            this.textBoxPin14.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin14.TabIndex = 40;
             // 
             // label37
             // 
@@ -1544,16 +1544,16 @@ namespace AutoFixtureTester
             this.label38.TabIndex = 38;
             this.label38.Text = "OL";
             // 
-            // textBox19
+            // textBoxPin13
             // 
-            this.textBox19.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox19.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox19.Enabled = false;
-            this.textBox19.Location = new System.Drawing.Point(30, 229);
-            this.textBox19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(173, 13);
-            this.textBox19.TabIndex = 37;
+            this.textBoxPin13.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin13.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin13.Enabled = false;
+            this.textBoxPin13.Location = new System.Drawing.Point(30, 229);
+            this.textBoxPin13.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin13.Name = "textBoxPin13";
+            this.textBoxPin13.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin13.TabIndex = 37;
             // 
             // label39
             // 
@@ -1575,16 +1575,16 @@ namespace AutoFixtureTester
             this.label24.TabIndex = 32;
             this.label24.Text = "OL";
             // 
-            // textBox12
+            // textBoxPin12
             // 
-            this.textBox12.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox12.Enabled = false;
-            this.textBox12.Location = new System.Drawing.Point(29, 212);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(173, 13);
-            this.textBox12.TabIndex = 31;
+            this.textBoxPin12.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin12.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin12.Enabled = false;
+            this.textBoxPin12.Location = new System.Drawing.Point(29, 212);
+            this.textBoxPin12.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin12.Name = "textBoxPin12";
+            this.textBoxPin12.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin12.TabIndex = 31;
             // 
             // label25
             // 
@@ -1606,16 +1606,16 @@ namespace AutoFixtureTester
             this.label22.TabIndex = 29;
             this.label22.Text = "OL";
             // 
-            // textBox11
+            // textBoxPin11
             // 
-            this.textBox11.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox11.Enabled = false;
-            this.textBox11.Location = new System.Drawing.Point(29, 195);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(173, 13);
-            this.textBox11.TabIndex = 28;
+            this.textBoxPin11.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin11.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin11.Enabled = false;
+            this.textBoxPin11.Location = new System.Drawing.Point(29, 195);
+            this.textBoxPin11.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin11.Name = "textBoxPin11";
+            this.textBoxPin11.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin11.TabIndex = 28;
             // 
             // label23
             // 
@@ -1637,16 +1637,16 @@ namespace AutoFixtureTester
             this.label20.TabIndex = 26;
             this.label20.Text = "OL";
             // 
-            // textBox10
+            // textBoxPin10
             // 
-            this.textBox10.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.Enabled = false;
-            this.textBox10.Location = new System.Drawing.Point(29, 178);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(173, 13);
-            this.textBox10.TabIndex = 25;
+            this.textBoxPin10.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin10.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin10.Enabled = false;
+            this.textBoxPin10.Location = new System.Drawing.Point(29, 178);
+            this.textBoxPin10.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin10.Name = "textBoxPin10";
+            this.textBoxPin10.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin10.TabIndex = 25;
             // 
             // label21
             // 
@@ -1668,16 +1668,16 @@ namespace AutoFixtureTester
             this.label18.TabIndex = 23;
             this.label18.Text = "OL";
             // 
-            // textBox9
+            // textBoxPin9
             // 
-            this.textBox9.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Enabled = false;
-            this.textBox9.Location = new System.Drawing.Point(29, 161);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(173, 13);
-            this.textBox9.TabIndex = 22;
+            this.textBoxPin9.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin9.Enabled = false;
+            this.textBoxPin9.Location = new System.Drawing.Point(29, 161);
+            this.textBoxPin9.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin9.Name = "textBoxPin9";
+            this.textBoxPin9.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin9.TabIndex = 22;
             // 
             // label19
             // 
@@ -1709,16 +1709,16 @@ namespace AutoFixtureTester
             this.label14.TabIndex = 20;
             this.label14.Text = "OL";
             // 
-            // textBox8
+            // textBoxPin8
             // 
-            this.textBox8.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Enabled = false;
-            this.textBox8.Location = new System.Drawing.Point(29, 144);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(173, 13);
-            this.textBox8.TabIndex = 4;
+            this.textBoxPin8.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin8.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin8.Enabled = false;
+            this.textBoxPin8.Location = new System.Drawing.Point(29, 144);
+            this.textBoxPin8.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin8.Name = "textBoxPin8";
+            this.textBoxPin8.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin8.TabIndex = 4;
             // 
             // label17
             // 
@@ -1730,16 +1730,16 @@ namespace AutoFixtureTester
             this.label17.TabIndex = 3;
             this.label17.Text = "8";
             // 
-            // textBox7
+            // textBoxPin7
             // 
-            this.textBox7.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Enabled = false;
-            this.textBox7.Location = new System.Drawing.Point(29, 127);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(173, 13);
-            this.textBox7.TabIndex = 19;
+            this.textBoxPin7.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin7.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin7.Enabled = false;
+            this.textBoxPin7.Location = new System.Drawing.Point(29, 127);
+            this.textBoxPin7.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin7.Name = "textBoxPin7";
+            this.textBoxPin7.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin7.TabIndex = 19;
             // 
             // label15
             // 
@@ -1762,16 +1762,16 @@ namespace AutoFixtureTester
             this.label12.TabIndex = 17;
             this.label12.Text = "OL";
             // 
-            // textBox6
+            // textBoxPin6
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(29, 110);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(173, 13);
-            this.textBox6.TabIndex = 16;
+            this.textBoxPin6.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin6.Enabled = false;
+            this.textBoxPin6.Location = new System.Drawing.Point(29, 110);
+            this.textBoxPin6.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin6.Name = "textBoxPin6";
+            this.textBoxPin6.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin6.TabIndex = 16;
             // 
             // label13
             // 
@@ -1793,16 +1793,16 @@ namespace AutoFixtureTester
             this.label10.TabIndex = 14;
             this.label10.Text = "OL";
             // 
-            // textBox5
+            // textBoxPin5
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(29, 93);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(173, 13);
-            this.textBox5.TabIndex = 13;
+            this.textBoxPin5.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin5.Enabled = false;
+            this.textBoxPin5.Location = new System.Drawing.Point(29, 93);
+            this.textBoxPin5.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin5.Name = "textBoxPin5";
+            this.textBoxPin5.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin5.TabIndex = 13;
             // 
             // label11
             // 
@@ -1824,16 +1824,16 @@ namespace AutoFixtureTester
             this.label8.TabIndex = 11;
             this.label8.Text = "OL";
             // 
-            // textBox4
+            // textBoxPin4
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(29, 76);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(173, 13);
-            this.textBox4.TabIndex = 10;
+            this.textBoxPin4.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin4.Enabled = false;
+            this.textBoxPin4.Location = new System.Drawing.Point(29, 76);
+            this.textBoxPin4.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin4.Name = "textBoxPin4";
+            this.textBoxPin4.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin4.TabIndex = 10;
             // 
             // label9
             // 
@@ -1855,16 +1855,16 @@ namespace AutoFixtureTester
             this.label6.TabIndex = 8;
             this.label6.Text = "OL";
             // 
-            // textBox3
+            // textBoxPin3
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(29, 59);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(173, 13);
-            this.textBox3.TabIndex = 7;
+            this.textBoxPin3.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin3.Enabled = false;
+            this.textBoxPin3.Location = new System.Drawing.Point(29, 59);
+            this.textBoxPin3.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin3.Name = "textBoxPin3";
+            this.textBoxPin3.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin3.TabIndex = 7;
             // 
             // label7
             // 
@@ -1886,16 +1886,16 @@ namespace AutoFixtureTester
             this.label4.TabIndex = 5;
             this.label4.Text = "OL";
             // 
-            // textBox2
+            // textBoxPin2
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(29, 42);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(173, 13);
-            this.textBox2.TabIndex = 4;
+            this.textBoxPin2.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin2.Enabled = false;
+            this.textBoxPin2.Location = new System.Drawing.Point(29, 42);
+            this.textBoxPin2.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin2.Name = "textBoxPin2";
+            this.textBoxPin2.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin2.TabIndex = 4;
             // 
             // label5
             // 
@@ -1917,16 +1917,16 @@ namespace AutoFixtureTester
             this.label3.TabIndex = 2;
             this.label3.Text = "OL";
             // 
-            // textBox1
+            // textBoxPin1
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(29, 25);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(173, 13);
-            this.textBox1.TabIndex = 1;
+            this.textBoxPin1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxPin1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxPin1.Enabled = false;
+            this.textBoxPin1.Location = new System.Drawing.Point(29, 25);
+            this.textBoxPin1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxPin1.Name = "textBoxPin1";
+            this.textBoxPin1.Size = new System.Drawing.Size(173, 13);
+            this.textBoxPin1.TabIndex = 1;
             // 
             // label2
             // 
@@ -2048,7 +2048,7 @@ namespace AutoFixtureTester
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Auto Cable Tester";
             this.groupBox1.ResumeLayout(false);
@@ -2067,153 +2067,153 @@ namespace AutoFixtureTester
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxPin1;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBoxPin7;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBoxPin6;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxPin5;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxPin4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxPin3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxPin2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox textBoxPin12;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textBoxPin11;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBoxPin10;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox textBoxPin9;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBoxPin8;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textBoxPin19;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox textBoxPin18;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBoxPin17;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox textBoxPin16;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox textBoxPin15;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox textBoxPin14;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.TextBox textBoxPin13;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.TextBox textBoxPin25;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox textBoxPin24;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox textBoxPin23;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox textBoxPin22;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox textBoxPin21;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.TextBox textBoxPin20;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.TextBox textBoxPin50;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.TextBox textBox27;
+        private System.Windows.Forms.TextBox textBoxPin49;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.TextBox textBox28;
+        private System.Windows.Forms.TextBox textBoxPin48;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.TextBox textBox29;
+        private System.Windows.Forms.TextBox textBoxPin47;
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.TextBox textBox30;
+        private System.Windows.Forms.TextBox textBoxPin46;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.TextBox textBox31;
+        private System.Windows.Forms.TextBox textBoxPin45;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.TextBox textBox32;
+        private System.Windows.Forms.TextBox textBoxPin44;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.TextBox textBox33;
+        private System.Windows.Forms.TextBox textBoxPin43;
         private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.TextBox textBox34;
+        private System.Windows.Forms.TextBox textBoxPin42;
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.TextBox textBox35;
+        private System.Windows.Forms.TextBox textBoxPin41;
         private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label72;
-        private System.Windows.Forms.TextBox textBox36;
+        private System.Windows.Forms.TextBox textBoxPin40;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.TextBox textBox37;
+        private System.Windows.Forms.TextBox textBoxPin39;
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Label label76;
-        private System.Windows.Forms.TextBox textBox38;
+        private System.Windows.Forms.TextBox textBoxPin38;
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.Label label78;
-        private System.Windows.Forms.TextBox textBox39;
+        private System.Windows.Forms.TextBox textBoxPin37;
         private System.Windows.Forms.Label label79;
         private System.Windows.Forms.Label label80;
-        private System.Windows.Forms.TextBox textBox40;
+        private System.Windows.Forms.TextBox textBoxPin36;
         private System.Windows.Forms.Label label81;
         private System.Windows.Forms.Label label82;
-        private System.Windows.Forms.TextBox textBox41;
+        private System.Windows.Forms.TextBox textBoxPin35;
         private System.Windows.Forms.Label label83;
         private System.Windows.Forms.Label label84;
-        private System.Windows.Forms.TextBox textBox42;
+        private System.Windows.Forms.TextBox textBoxPin34;
         private System.Windows.Forms.Label label85;
         private System.Windows.Forms.Label label86;
         private System.Windows.Forms.Label label87;
-        private System.Windows.Forms.TextBox textBox43;
+        private System.Windows.Forms.TextBox textBoxPin33;
         private System.Windows.Forms.Label label88;
-        private System.Windows.Forms.TextBox textBox44;
+        private System.Windows.Forms.TextBox textBoxPin32;
         private System.Windows.Forms.Label label89;
         private System.Windows.Forms.Label label90;
-        private System.Windows.Forms.TextBox textBox45;
+        private System.Windows.Forms.TextBox textBoxPin31;
         private System.Windows.Forms.Label label91;
         private System.Windows.Forms.Label label92;
-        private System.Windows.Forms.TextBox textBox46;
+        private System.Windows.Forms.TextBox textBoxPin30;
         private System.Windows.Forms.Label label93;
         private System.Windows.Forms.Label label94;
-        private System.Windows.Forms.TextBox textBox47;
+        private System.Windows.Forms.TextBox textBoxPin29;
         private System.Windows.Forms.Label label95;
         private System.Windows.Forms.Label label96;
-        private System.Windows.Forms.TextBox textBox48;
+        private System.Windows.Forms.TextBox textBoxPin28;
         private System.Windows.Forms.Label label97;
         private System.Windows.Forms.Label label98;
-        private System.Windows.Forms.TextBox textBox49;
+        private System.Windows.Forms.TextBox textBoxPin27;
         private System.Windows.Forms.Label label99;
         private System.Windows.Forms.Label label100;
-        private System.Windows.Forms.TextBox textBox50;
+        private System.Windows.Forms.TextBox textBoxPin26;
         private System.Windows.Forms.Label label101;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txtBoxPinStart;

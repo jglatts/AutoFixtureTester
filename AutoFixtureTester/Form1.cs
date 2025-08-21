@@ -35,6 +35,8 @@ namespace AutoFixtureTester
         private readonly int startFullTestCmd;
         private readonly int cmdStart;
 
+        public delegate void checkData(string line);
+
         public Form1()
         {
             InitializeComponent();
@@ -135,13 +137,79 @@ namespace AutoFixtureTester
 
             setUIForTest();
             sendCmdInfo(startShortTestCmd);
-            waitForSerialData();
+            waitForSerialData(checkShortData);
 
             return ret;
         }
 
+        private void checkShortData(string line)
+        {
+            string[] data = line.Trim().Split(',');
+            int pin = -1;
+            if (data.Length >= 3)
+            {
+                Int32.TryParse(data[1], out pin);
+                if (pin == -1)
+                {
+                    MessageBox.Show("err in checkshortdata");
+                    return;
+                }
+                if (data[2].Trim() == "noshort")
+                {
+                    Control[] matches = this.Controls.Find("textBoxPin" + pin, true);
+                    if (matches.Length > 0 && matches[0] is TextBox tb)
+                    {
+                        tb.BackColor = Color.Green;
+                    }
+                    else
+                    {
+                        MessageBox.Show($"No control named {"textBoxPin" + pin} found.");
+                    }
+                }
+                else
+                {
+                    // better indexing here
+                    int short_pin = Int32.Parse(data[3].Trim());
+                    Control[] testPin = this.Controls.Find("textBoxPin" + pin, true);
+                    Control[] shortPin = this.Controls.Find("textBoxPin" + short_pin, true);
+                    if (testPin.Length > 0 && testPin[0] is TextBox tb)
+                    {
+                        tb.BackColor = Color.Red;
+                    }
+                    if (shortPin.Length > 0 && shortPin[0] is TextBox t)
+                    {
+                        t.BackColor = Color.Red;
+                    }
+                }
+            }
+        }
+
         private void setUIForTest() {
-            
+            for (int i = 1; i < 51; i++)
+            {
+                Control[] matches = this.Controls.Find("textBoxPin" + i, true);
+                if (matches.Length > 0 && matches[0] is TextBox tb)
+                {
+                    tb.BackColor = Color.Gray;
+                }
+                else
+                {
+                    MessageBox.Show($"No control named {"textBoxPin" + i} found.");
+                }
+            }
+
+            for (int i = dutStartPin; i < dutEndPin+1; i++)
+            {
+                Control[] matches = this.Controls.Find("textBoxPin" + i, true);
+                if (matches.Length > 0 && matches[0] is TextBox tb)
+                {
+                    tb.BackColor = Color.Green; 
+                }
+                else
+                {
+                    MessageBox.Show($"No control named {"textBoxPin" + i} found.");
+                }
+            }
         }
 
         private void btnRunOpenTest_Click(object sender, EventArgs e)
@@ -159,13 +227,46 @@ namespace AutoFixtureTester
             if (!checkPort())
                 return false;
 
+            setUIForTest();
             sendCmdInfo(startOpenTestCmd);
-            waitForSerialData();
+            waitForSerialData(checkOpenData);
 
             return ret;
         }
 
-        private void waitForSerialData() {
+        private void checkOpenData(string line) 
+        {
+            string[] data = line.Split(',');
+            int pin = -1;
+            if (data.Length >= 3)
+            {
+                Int32.TryParse(data[1], out pin);
+                if (pin == -1)
+                {
+                    MessageBox.Show("err in checkopendata");
+                    return;
+                }
+
+                Control[] matches = this.Controls.Find("textBoxPin" + pin, true);
+                if (matches.Length > 0 && matches[0] is TextBox tb)
+                {
+                    if (data[2].Trim() == "passed")
+                        tb.BackColor = Color.Green;
+                    else
+                        tb.BackColor = Color.Red;
+                }
+                else
+                {
+                    MessageBox.Show($"No control named {"textBoxPin" + pin} found.");
+                }
+            }
+            else
+            {
+                MessageBox.Show($"err with data\n{line}");
+            }
+        }
+
+        private void waitForSerialData(checkData dataCallback) {
             while (true)
             {
                 try
@@ -173,6 +274,7 @@ namespace AutoFixtureTester
                     string check = port.ReadLine();
                     if (check.Trim() == "done")
                         return;
+                    dataCallback(check);
                     txtBoxTestLogs.Text += DateTime.Now.ToString("hh:mm:ss") + ">> " + check + "\n";
                 }
                 catch (TimeoutException)
