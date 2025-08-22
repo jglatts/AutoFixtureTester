@@ -101,14 +101,6 @@ The tester is split into three main parts:
 
 ---
 
-## Roadmap
-- [ ] Save test results to CSV/Excel  
-- [ ] Add COM port selection in UI  
-- [ ] Run tests asynchronously (non-blocking UI)  
-- [ ] Support more than 50 pins (configurable limit)  
-- [ ] Add graphical pin map instead of textboxes  
-
----
 
 ## Author
 **John Glatts**  
