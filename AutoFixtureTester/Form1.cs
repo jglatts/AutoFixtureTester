@@ -20,15 +20,10 @@ using System.IO.Ports;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 
 /*
- *  get nice working system in single thread
- *  then branch of test sequences in sep. thread
  *  
- *  working well need to have better error checking for 
- *  full testing 
+ *  Nice working PoC System
+ *  Refactor :)
  *  
- *  result is OK 
- *  need a way to save UI for showin bad pins
- *  extra book-keeping!
  */
 
 namespace AutoFixtureTester
@@ -112,7 +107,6 @@ namespace AutoFixtureTester
             if (!checkPort())
                 return;
 
-
             MessageBox.Show("Running Open Test");
             setUIForTest();
             sendCmdInfo(startOpenTestCmd);
@@ -183,7 +177,7 @@ namespace AutoFixtureTester
                 if (shortPin.Length > 0 && shortPin[0] is TextBox t)
                     t.BackColor = Color.Red;
                 testResult.hasFailure = true;
-                testResult.failures.Add("pin #" + pin + " shorted with pin #" + short_pin);
+                testResult.failures.Add("pin " + pin + " shorted with pin " + short_pin);
             }
             catch (Exception e)
             {
@@ -291,13 +285,37 @@ namespace AutoFixtureTester
                 else
                 {
                     testResult.hasFailure = true;
-                    testResult.failures.Add("pin #" + pin + " open circuit");
-                    tb.BackColor = Color.OrangeRed;
+                    testResult.failures.Add("pin " + pin + " open-circuit");
+                    tb.BackColor = Color.DarkRed;
                 }
             }
             else
             {
                 MessageBox.Show($"No control named {"textBoxPin" + pin} found.");
+            }
+        }
+
+        private void updateUIForOpenFailure(int pin) 
+        {
+            Control[] matches = this.Controls.Find("textBoxPin" + pin, true);
+            if (matches.Length > 0 && matches[0] is TextBox tb)
+                tb.BackColor = Color.DarkRed;
+        }
+
+        private void updateUIForShortFailure(int pin, int short_pin)
+        {
+            try
+            {
+                Control[] testPin = this.Controls.Find("textBoxPin" + pin, true);
+                Control[] shortPin = this.Controls.Find("textBoxPin" + short_pin, true);
+                if (testPin.Length > 0 && testPin[0] is TextBox tb)
+                    tb.BackColor = Color.Red;
+                if (shortPin.Length > 0 && shortPin[0] is TextBox t)
+                    t.BackColor = Color.Red;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
             }
         }
 
@@ -347,10 +365,18 @@ namespace AutoFixtureTester
         {
             if (testResult.hasFailure)
             {
-                string s = "";
+                string msg = "";
                 foreach (string failure in testResult.failures)
-                    s += failure + "\n";
-                MessageBox.Show(s);
+                {
+                    string[] failed_pins = failure.Split(' ');
+                    int failed_pin = Int32.Parse(failed_pins[1]);
+                    msg += failure + "\n";
+                    if (failed_pins[2] == "open-circuit")
+                        updateUIForOpenFailure(failed_pin);
+                    else
+                        updateUIForShortFailure(failed_pin, Int32.Parse(failed_pins[5]));  
+                }
+                MessageBox.Show(msg);
             }
         }
 
@@ -362,9 +388,9 @@ namespace AutoFixtureTester
                 return false;
             }
 
-            if (dutStartPin < 1 || dutStartPin > 50)
+            if (dutStartPin < 1 || dutStartPin > 40)
             {
-                MessageBox.Show("Error!\nDUT Start Pin Must Be 1<X<50", "Z-Axis Connector Company");
+                MessageBox.Show("Error!\nDUT Start Pin Must Be 1<X<40", "Z-Axis Connector Company");
                 return false;
             }
 
@@ -374,9 +400,9 @@ namespace AutoFixtureTester
                 return false;
             }
 
-            if (dutStartPin < 1 || dutEndPin > 50 || dutEndPin <= dutStartPin)
+            if (dutStartPin < 1 || dutEndPin > 40 || dutEndPin <= dutStartPin)
             {
-                MessageBox.Show("Error!\nDUT Start End Pin Must Be 50>Y>X>1", "Z-Axis Connector Company");
+                MessageBox.Show("Error!\nDUT Start End Pin Must Be 40>Y>X>1", "Z-Axis Connector Company");
                 return false;
             }
 
