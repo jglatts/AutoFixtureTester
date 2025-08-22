@@ -19,13 +19,6 @@ using System.Windows.Forms;
 using System.IO.Ports;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 
-/*
- *  
- *  Nice working PoC System
- *  Refactor :)
- *  
- */
-
 namespace AutoFixtureTester
 {
     public partial class Form1 : Form
@@ -40,6 +33,9 @@ namespace AutoFixtureTester
 
         public delegate void checkData(string line);
 
+        /// <summary>
+        /// Constructor: Initializes the form, serial port, and UI components
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
@@ -50,11 +46,17 @@ namespace AutoFixtureTester
             cmdStart = 71;
         }
 
+        /// <summary>
+        /// Initializes the UI components and writes initial log message
+        /// </summary>
         private void initUIComponents()
-        { 
+        {
             txtBoxTestLogs.Text += DateTime.Now.ToString("hh:mm:ss") + ">> program loaded\n";
         }
 
+        /// <summary>
+        /// Initializes the serial port and opens the first available port
+        /// </summary>
         private void initSerialPort()
         {
             string[] port_names = SerialPort.GetPortNames();
@@ -81,6 +83,10 @@ namespace AutoFixtureTester
             }
         }
 
+        /// <summary>
+        /// Checks whether the serial port is open
+        /// </summary>
+        /// <returns>True if port is open, false if not</returns>
         private bool checkPort()
         {
             if (!port.IsOpen)
@@ -92,11 +98,18 @@ namespace AutoFixtureTester
             return true;
         }
 
-        private void sendCmdInfo(int cmd) 
+        /// <summary>
+        /// Sends a command to the device including start/end pins
+        /// </summary>
+        /// <param name="cmd">Command code to send</param>
+        private void sendCmdInfo(int cmd)
         {
             port.Write($"{cmdStart} {dutStartPin} {dutEndPin} {cmd}\n");
         }
 
+        /// <summary>
+        /// Event handler to run a full test (open + short)
+        /// </summary>
         private void btnRunFullTest_Click(object sender, EventArgs e)
         {
             testResult = new Result();
@@ -107,12 +120,10 @@ namespace AutoFixtureTester
             if (!checkPort())
                 return;
 
-            MessageBox.Show("Running Open Test");
             setUIForTest();
             sendCmdInfo(startOpenTestCmd);
             waitForSerialData(checkOpenData);
 
-            MessageBox.Show("Running Short Test");
             setUIForTest();
             sendCmdInfo(startShortTestCmd);
             waitForSerialData(checkShortData);
@@ -120,6 +131,10 @@ namespace AutoFixtureTester
             printTestFailures();
         }
 
+        /// <summary>
+        /// Sends a test command and shows the returned response (used for communication tests)
+        /// </summary>
+        /// <param name="cmd">Command to send</param>
         private void testComms(int cmd)
         {
             port.WriteLine(cmd + "");
@@ -127,12 +142,19 @@ namespace AutoFixtureTester
             MessageBox.Show(ret);
         }
 
+        /// <summary>
+        /// Event handler to run the short test only
+        /// </summary>
         private void btnRunShortTest_Click(object sender, EventArgs e)
         {
             runShortTest();
         }
 
-        private bool runShortTest() 
+        /// <summary>
+        /// Executes a short-circuit test on the DUT pins
+        /// </summary>
+        /// <returns>True if test executed, false if input/port error</returns>
+        private bool runShortTest()
         {
             bool ret = false;
             testResult = new Result();
@@ -143,7 +165,6 @@ namespace AutoFixtureTester
             if (!checkPort())
                 return false;
 
-            MessageBox.Show("Running Short Test");
             setUIForTest();
             sendCmdInfo(startShortTestCmd);
             waitForSerialData(checkShortData);
@@ -152,30 +173,40 @@ namespace AutoFixtureTester
             return ret;
         }
 
-        private void handleNoShort(int pin)
+        /// <summary>
+        /// Finds the TextBox control corresponding to a DUT pin
+        /// </summary>
+        /// <param name="pin">Pin number</param>
+        /// <returns>TextBox for that pin</returns>
+        private TextBox getPinTextBox(int pin)
         {
+            TextBox ret = null;
             Control[] matches = this.Controls.Find("textBoxPin" + pin, true);
-            if (matches.Length > 0 && matches[0] is TextBox tb)
+
+            if (matches.Length > 0 && matches[0] is TextBox)
             {
-                tb.BackColor = Color.Green;
+                ret = (TextBox)matches[0];
             }
             else
             {
                 MessageBox.Show($"No control named {"textBoxPin" + pin} found.");
             }
+
+            return ret;
         }
 
+        /// <summary>
+        /// Handles a detected short between pins and updates UI/logs
+        /// </summary>
+        /// <param name="data">Serial data array</param>
+        /// <param name="pin">Pin number being checked</param>
         private void handleShort(string[] data, int pin)
         {
             try
             {
                 int short_pin = Int32.Parse(data[3].Trim());
-                Control[] testPin = this.Controls.Find("textBoxPin" + pin, true);
-                Control[] shortPin = this.Controls.Find("textBoxPin" + short_pin, true);
-                if (testPin.Length > 0 && testPin[0] is TextBox tb)
-                    tb.BackColor = Color.Red;
-                if (shortPin.Length > 0 && shortPin[0] is TextBox t)
-                    t.BackColor = Color.Red;
+                getPinTextBox(pin).BackColor = Color.Red;
+                getPinTextBox(short_pin).BackColor = Color.Red;
                 testResult.hasFailure = true;
                 testResult.failures.Add("pin " + pin + " shorted with pin " + short_pin);
             }
@@ -185,6 +216,10 @@ namespace AutoFixtureTester
             }
         }
 
+        /// <summary>
+        /// Processes a single line of serial data for short-circuit test
+        /// </summary>
+        /// <param name="line">CSV string from serial port</param>
         private void checkShortData(string line)
         {
             string[] data = line.Trim().Split(',');
@@ -200,7 +235,7 @@ namespace AutoFixtureTester
 
                 if (data[2].Trim() == "noshort")
                 {
-                    handleNoShort(pin);
+                    getPinTextBox(pin).BackColor = Color.Green;
                 }
                 else
                 {
@@ -209,42 +244,32 @@ namespace AutoFixtureTester
             }
         }
 
-        private void setUIForTest() {
+        /// <summary>
+        /// Sets the UI pins to default colors before a test
+        /// </summary>
+        private void setUIForTest()
+        {
+            // rest tp gray
             for (int i = 1; i < 51; i++)
-            {
-                Control[] matches = this.Controls.Find("textBoxPin" + i, true);
-                if (matches.Length > 0 && matches[0] is TextBox tb)
-                {
-                    tb.BackColor = Color.Gray;
-                }
-                else
-                {
-                    MessageBox.Show($"No control named {"textBoxPin" + i} found.");
-                }
-            }
+                getPinTextBox(i).BackColor = Color.Gray;
 
-            for (int i = dutStartPin; i < dutEndPin+1; i++)
-            {
-                Control[] matches = this.Controls.Find("textBoxPin" + i, true);
-                if (matches.Length > 0 && matches[0] is TextBox tb)
-                {
-                    tb.BackColor = Color.Green; 
-                }
-                else
-                {
-                    MessageBox.Show($"No control named {"textBoxPin" + i} found.");
-                }
-            }
-
-            // check for failures here and set UI
-
+            // set the user-supplied test pins to green
+            for (int i = dutStartPin; i < dutEndPin + 1; i++)
+                getPinTextBox(i).BackColor = Color.Green;
         }
 
+        /// <summary>
+        /// Event handler to run open-circuit test only
+        /// </summary>
         private void btnRunOpenTest_Click(object sender, EventArgs e)
         {
-            runOpenTest(); 
+            runOpenTest();
         }
 
+        /// <summary>
+        /// Executes an open-circuit test on the DUT pins
+        /// </summary>
+        /// <returns>True if test executed, false if input/port error</returns>
         private bool runOpenTest()
         {
             bool ret = false;
@@ -256,7 +281,6 @@ namespace AutoFixtureTester
             if (!checkPort())
                 return false;
 
-            MessageBox.Show("Running Open Test");
             setUIForTest();
             sendCmdInfo(startOpenTestCmd);
             waitForSerialData(checkOpenData);
@@ -265,7 +289,10 @@ namespace AutoFixtureTester
             return ret;
         }
 
-
+        /// <summary>
+        /// Updates result and UI for a single open-circuit pin
+        /// </summary>
+        /// <param name="data">CSV data array from serial</param>
         private void handleOpenData(string[] data)
         {
             int pin = -1;
@@ -277,41 +304,30 @@ namespace AutoFixtureTester
                 return;
             }
 
-            Control[] matches = this.Controls.Find("textBoxPin" + pin, true);
-            if (matches.Length > 0 && matches[0] is TextBox tb)
+            TextBox tb = getPinTextBox(pin);
+            if (data[2].Trim() == "passed")
             {
-                if (data[2].Trim() == "passed")
-                    tb.BackColor = Color.Green;
-                else
-                {
-                    testResult.hasFailure = true;
-                    testResult.failures.Add("pin " + pin + " open-circuit");
-                    tb.BackColor = Color.DarkRed;
-                }
+                tb.BackColor = Color.Green;
             }
             else
             {
-                MessageBox.Show($"No control named {"textBoxPin" + pin} found.");
+                testResult.hasFailure = true;
+                testResult.failures.Add("pin " + pin + " open-circuit");
+                tb.BackColor = Color.DarkRed;
             }
         }
 
-        private void updateUIForOpenFailure(int pin) 
-        {
-            Control[] matches = this.Controls.Find("textBoxPin" + pin, true);
-            if (matches.Length > 0 && matches[0] is TextBox tb)
-                tb.BackColor = Color.DarkRed;
-        }
-
+        /// <summary>
+        /// Updates UI for short-circuit failure
+        /// </summary>
+        /// <param name="pin">First pin</param>
+        /// <param name="short_pin">Shorted pin</param>
         private void updateUIForShortFailure(int pin, int short_pin)
         {
             try
             {
-                Control[] testPin = this.Controls.Find("textBoxPin" + pin, true);
-                Control[] shortPin = this.Controls.Find("textBoxPin" + short_pin, true);
-                if (testPin.Length > 0 && testPin[0] is TextBox tb)
-                    tb.BackColor = Color.Red;
-                if (shortPin.Length > 0 && shortPin[0] is TextBox t)
-                    t.BackColor = Color.Red;
+                getPinTextBox(pin).BackColor = Color.Red;
+                getPinTextBox(short_pin).BackColor = Color.Red;
             }
             catch (Exception e)
             {
@@ -319,12 +335,16 @@ namespace AutoFixtureTester
             }
         }
 
-        private void checkOpenData(string line) 
+        /// <summary>
+        /// Processes a single line of serial data for open-circuit test
+        /// </summary>
+        /// <param name="line">CSV string from serial port</param>
+        private void checkOpenData(string line)
         {
             string[] data = line.Split(',');
             if (data.Length >= 3)
             {
-                handleOpenData(data);    
+                handleOpenData(data);
             }
             else
             {
@@ -332,7 +352,12 @@ namespace AutoFixtureTester
             }
         }
 
-        private void waitForSerialData(checkData dataCallback) {
+        /// <summary>
+        /// Waits for serial data and calls a callback for each line
+        /// </summary>
+        /// <param name="dataCallback">Delegate to handle incoming data lines</param>
+        private void waitForSerialData(checkData dataCallback)
+        {
             while (true)
             {
                 try
@@ -340,7 +365,6 @@ namespace AutoFixtureTester
                     string dataLine = port.ReadLine();
                     if (dataLine.Trim() == "done")
                     {
-                        // can put result processing here 
                         txtBoxTestLogs.Text += "\n";
                         return;
                     }
@@ -361,6 +385,9 @@ namespace AutoFixtureTester
             }
         }
 
+        /// <summary>
+        /// Prints test failures or success to UI
+        /// </summary>
         private void printTestFailures()
         {
             if (testResult.hasFailure)
@@ -372,14 +399,22 @@ namespace AutoFixtureTester
                     int failed_pin = Int32.Parse(failed_pins[1]);
                     msg += failure + "\n";
                     if (failed_pins[2] == "open-circuit")
-                        updateUIForOpenFailure(failed_pin);
+                        getPinTextBox(failed_pin).BackColor = Color.DarkRed;
                     else
-                        updateUIForShortFailure(failed_pin, Int32.Parse(failed_pins[5]));  
+                        updateUIForShortFailure(failed_pin, Int32.Parse(failed_pins[5]));
                 }
                 MessageBox.Show(msg);
             }
+            else
+            {
+                MessageBox.Show("Test Passed");
+            }
         }
 
+        /// <summary>
+        /// Validates user input for DUT start/end pins
+        /// </summary>
+        /// <returns>True if valid, false if invalid</returns>
         private bool checkUserInput()
         {
             if (!Int32.TryParse(txtBoxPinStart.Text, out dutStartPin))
