@@ -8,8 +8,13 @@ namespace AutoFixtureTester
 {
     class Result
     {
-        public int pin;
-        public bool passed_open_test;
-        public bool passed_short_test;
+        public bool hasFailure;
+        public List<string> failures;
+
+        public Result()
+        {
+            hasFailure = false;
+            failures= new List<string>();
+        }
     }
 }

@@ -22,6 +22,13 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 /*
  *  get nice working system in single thread
  *  then branch of test sequences in sep. thread
+ *  
+ *  working well need to have better error checking for 
+ *  full testing 
+ *  
+ *  result is OK 
+ *  need a way to save UI for showin bad pins
+ *  extra book-keeping!
  */
 
 namespace AutoFixtureTester
@@ -29,13 +36,13 @@ namespace AutoFixtureTester
     public partial class Form1 : Form
     {
         private SerialPort port;
+        private Result testResult;
         private int dutStartPin;
         private int dutEndPin;
         private readonly int startOpenTestCmd;
         private readonly int startShortTestCmd;
         private readonly int startFullTestCmd;
         private readonly int cmdStart;
-        private bool runningFulltest;
 
         public delegate void checkData(string line);
 
@@ -48,7 +55,6 @@ namespace AutoFixtureTester
             startShortTestCmd = 69;
             startFullTestCmd = 70;
             cmdStart = 71;
-            runningFulltest = false;
         }
 
         private void initUIComponents()
@@ -100,10 +106,27 @@ namespace AutoFixtureTester
 
         private void btnRunFullTest_Click(object sender, EventArgs e)
         {
-            runOpenTest();
-            runShortTest();
+            testResult = new Result();
+
+            if (!checkUserInput())
+                return;
+
+            if (!checkPort())
+                return;
+
+            MessageBox.Show("Running Short Test");
+            setUIForTest();
+            sendCmdInfo(startShortTestCmd);
+            waitForSerialData(checkShortData);
+
+            MessageBox.Show("Running Open Test");
+            setUIForTest();
+            sendCmdInfo(startOpenTestCmd);
+            waitForSerialData(checkOpenData);
+            
+            printTestFailures();
         }
-        
+
         private void testComms(int cmd)
         {
             port.WriteLine(cmd + "");
@@ -119,6 +142,7 @@ namespace AutoFixtureTester
         private bool runShortTest() 
         {
             bool ret = false;
+            testResult = new Result();
 
             if (!checkUserInput())
                 return false;
@@ -127,10 +151,10 @@ namespace AutoFixtureTester
                 return false;
 
             MessageBox.Show("Running Short Test");
-            runningFulltest = false;
             setUIForTest();
             sendCmdInfo(startShortTestCmd);
             waitForSerialData(checkShortData);
+            printTestFailures();
 
             return ret;
         }
@@ -175,6 +199,8 @@ namespace AutoFixtureTester
                         {
                             t.BackColor = Color.Red;
                         }
+                        testResult.hasFailure = true;
+                        testResult.failures.Add("pin #" + pin + " shorted with pin #" + short_pin);
                     }
                     catch (Exception e) 
                     {
@@ -220,6 +246,7 @@ namespace AutoFixtureTester
         private bool runOpenTest()
         {
             bool ret = false;
+            testResult = new Result();
 
             if (!checkUserInput())
                 return false;
@@ -228,10 +255,10 @@ namespace AutoFixtureTester
                 return false;
 
             MessageBox.Show("Running Open Test");
-            runningFulltest = false;
             setUIForTest();
             sendCmdInfo(startOpenTestCmd);
             waitForSerialData(checkOpenData);
+            printTestFailures();
 
             return ret;
         }
@@ -255,7 +282,11 @@ namespace AutoFixtureTester
                     if (data[2].Trim() == "passed")
                         tb.BackColor = Color.Green;
                     else
-                        tb.BackColor = Color.Red;
+                    {
+                        testResult.hasFailure = true;
+                        testResult.failures.Add("pin #" + pin + " open circuit");
+                        tb.BackColor = Color.OrangeRed;
+                    }
                 }
                 else
                 {
@@ -269,7 +300,6 @@ namespace AutoFixtureTester
         }
 
         private void waitForSerialData(checkData dataCallback) {
-            bool is_done = false;
             while (true)
             {
                 try
@@ -277,15 +307,9 @@ namespace AutoFixtureTester
                     string dataLine = port.ReadLine();
                     if (dataLine.Trim() == "done")
                     {
-                        if (!runningFulltest || is_done)
-                        {
-                            txtBoxTestLogs.Text += "\n";
-                            return;
-                        }
-                        else
-                        {
-                            is_done = true;
-                        }
+                        // can put result processing here 
+                        txtBoxTestLogs.Text += "\n";
+                        return;
                     }
                     else
                     {
@@ -301,6 +325,17 @@ namespace AutoFixtureTester
 
                 txtBoxTestLogs.SelectionStart = txtBoxTestLogs.Text.Length;
                 txtBoxTestLogs.ScrollToCaret();
+            }
+        }
+
+        private void printTestFailures()
+        {
+            if (testResult.hasFailure)
+            {
+                string s = "";
+                foreach (string failure in testResult.failures)
+                    s += failure + "\n";
+                MessageBox.Show(s);
             }
         }
 
