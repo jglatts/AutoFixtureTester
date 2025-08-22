@@ -158,6 +158,7 @@ namespace AutoFixtureTester
             this.label53 = new System.Windows.Forms.Label();
             this.textBoxPin50 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -184,16 +185,16 @@ namespace AutoFixtureTester
             this.groupBox2.Controls.Add(this.txtBoxPinStart);
             this.groupBox2.Controls.Add(this.label103);
             this.groupBox2.Controls.Add(this.label102);
-            this.groupBox2.Location = new System.Drawing.Point(539, 77);
+            this.groupBox2.Location = new System.Drawing.Point(539, 92);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(262, 243);
+            this.groupBox2.Size = new System.Drawing.Size(325, 243);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Test Parameters";
             // 
             // btnRunOpenTest
             // 
-            this.btnRunOpenTest.Location = new System.Drawing.Point(44, 199);
+            this.btnRunOpenTest.Location = new System.Drawing.Point(87, 199);
             this.btnRunOpenTest.Name = "btnRunOpenTest";
             this.btnRunOpenTest.Size = new System.Drawing.Size(172, 28);
             this.btnRunOpenTest.TabIndex = 153;
@@ -203,7 +204,7 @@ namespace AutoFixtureTester
             // 
             // btnRunShortTest
             // 
-            this.btnRunShortTest.Location = new System.Drawing.Point(44, 167);
+            this.btnRunShortTest.Location = new System.Drawing.Point(87, 167);
             this.btnRunShortTest.Name = "btnRunShortTest";
             this.btnRunShortTest.Size = new System.Drawing.Size(172, 28);
             this.btnRunShortTest.TabIndex = 152;
@@ -213,7 +214,7 @@ namespace AutoFixtureTester
             // 
             // btnRunFullTest
             // 
-            this.btnRunFullTest.Location = new System.Drawing.Point(44, 115);
+            this.btnRunFullTest.Location = new System.Drawing.Point(87, 115);
             this.btnRunFullTest.Name = "btnRunFullTest";
             this.btnRunFullTest.Size = new System.Drawing.Size(172, 46);
             this.btnRunFullTest.TabIndex = 151;
@@ -223,7 +224,7 @@ namespace AutoFixtureTester
             // 
             // txtBoxPinEnd
             // 
-            this.txtBoxPinEnd.Location = new System.Drawing.Point(93, 79);
+            this.txtBoxPinEnd.Location = new System.Drawing.Point(136, 79);
             this.txtBoxPinEnd.Name = "txtBoxPinEnd";
             this.txtBoxPinEnd.Size = new System.Drawing.Size(100, 20);
             this.txtBoxPinEnd.TabIndex = 150;
@@ -231,7 +232,7 @@ namespace AutoFixtureTester
             // 
             // txtBoxPinStart
             // 
-            this.txtBoxPinStart.Location = new System.Drawing.Point(93, 44);
+            this.txtBoxPinStart.Location = new System.Drawing.Point(136, 44);
             this.txtBoxPinStart.Name = "txtBoxPinStart";
             this.txtBoxPinStart.Size = new System.Drawing.Size(100, 20);
             this.txtBoxPinStart.TabIndex = 149;
@@ -240,7 +241,7 @@ namespace AutoFixtureTester
             // label103
             // 
             this.label103.AutoSize = true;
-            this.label103.Location = new System.Drawing.Point(41, 82);
+            this.label103.Location = new System.Drawing.Point(84, 82);
             this.label103.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label103.Name = "label103";
             this.label103.Size = new System.Drawing.Size(44, 13);
@@ -250,7 +251,7 @@ namespace AutoFixtureTester
             // label102
             // 
             this.label102.AutoSize = true;
-            this.label102.Location = new System.Drawing.Point(41, 46);
+            this.label102.Location = new System.Drawing.Point(84, 46);
             this.label102.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label102.Name = "label102";
             this.label102.Size = new System.Drawing.Size(47, 13);
@@ -260,9 +261,9 @@ namespace AutoFixtureTester
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.txtBoxTestLogs);
-            this.groupBox3.Location = new System.Drawing.Point(539, 333);
+            this.groupBox3.Location = new System.Drawing.Point(539, 348);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(262, 208);
+            this.groupBox3.Size = new System.Drawing.Size(325, 208);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Test Logs";
@@ -271,7 +272,7 @@ namespace AutoFixtureTester
             // 
             this.txtBoxTestLogs.Location = new System.Drawing.Point(22, 25);
             this.txtBoxTestLogs.Name = "txtBoxTestLogs";
-            this.txtBoxTestLogs.Size = new System.Drawing.Size(224, 172);
+            this.txtBoxTestLogs.Size = new System.Drawing.Size(287, 172);
             this.txtBoxTestLogs.TabIndex = 0;
             this.txtBoxTestLogs.Text = "";
             // 
@@ -291,7 +292,7 @@ namespace AutoFixtureTester
             this.textBoxPin1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin1.Enabled = false;
             this.textBoxPin1.Location = new System.Drawing.Point(29, 25);
-            this.textBoxPin1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin1.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin1.Name = "textBoxPin1";
             this.textBoxPin1.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin1.TabIndex = 1;
@@ -312,7 +313,7 @@ namespace AutoFixtureTester
             this.textBoxPin2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin2.Enabled = false;
             this.textBoxPin2.Location = new System.Drawing.Point(29, 42);
-            this.textBoxPin2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin2.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin2.Name = "textBoxPin2";
             this.textBoxPin2.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin2.TabIndex = 4;
@@ -333,7 +334,7 @@ namespace AutoFixtureTester
             this.textBoxPin3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin3.Enabled = false;
             this.textBoxPin3.Location = new System.Drawing.Point(29, 59);
-            this.textBoxPin3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin3.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin3.Name = "textBoxPin3";
             this.textBoxPin3.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin3.TabIndex = 7;
@@ -354,7 +355,7 @@ namespace AutoFixtureTester
             this.textBoxPin4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin4.Enabled = false;
             this.textBoxPin4.Location = new System.Drawing.Point(29, 76);
-            this.textBoxPin4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin4.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin4.Name = "textBoxPin4";
             this.textBoxPin4.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin4.TabIndex = 10;
@@ -375,7 +376,7 @@ namespace AutoFixtureTester
             this.textBoxPin5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin5.Enabled = false;
             this.textBoxPin5.Location = new System.Drawing.Point(29, 93);
-            this.textBoxPin5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin5.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin5.Name = "textBoxPin5";
             this.textBoxPin5.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin5.TabIndex = 13;
@@ -396,7 +397,7 @@ namespace AutoFixtureTester
             this.textBoxPin6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin6.Enabled = false;
             this.textBoxPin6.Location = new System.Drawing.Point(29, 110);
-            this.textBoxPin6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin6.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin6.Name = "textBoxPin6";
             this.textBoxPin6.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin6.TabIndex = 16;
@@ -418,7 +419,7 @@ namespace AutoFixtureTester
             this.textBoxPin7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin7.Enabled = false;
             this.textBoxPin7.Location = new System.Drawing.Point(29, 127);
-            this.textBoxPin7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin7.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin7.Name = "textBoxPin7";
             this.textBoxPin7.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin7.TabIndex = 19;
@@ -439,7 +440,7 @@ namespace AutoFixtureTester
             this.textBoxPin8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin8.Enabled = false;
             this.textBoxPin8.Location = new System.Drawing.Point(29, 144);
-            this.textBoxPin8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin8.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin8.Name = "textBoxPin8";
             this.textBoxPin8.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin8.TabIndex = 4;
@@ -460,7 +461,7 @@ namespace AutoFixtureTester
             this.textBoxPin9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin9.Enabled = false;
             this.textBoxPin9.Location = new System.Drawing.Point(29, 161);
-            this.textBoxPin9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin9.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin9.Name = "textBoxPin9";
             this.textBoxPin9.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin9.TabIndex = 22;
@@ -481,7 +482,7 @@ namespace AutoFixtureTester
             this.textBoxPin10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin10.Enabled = false;
             this.textBoxPin10.Location = new System.Drawing.Point(29, 178);
-            this.textBoxPin10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin10.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin10.Name = "textBoxPin10";
             this.textBoxPin10.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin10.TabIndex = 25;
@@ -502,7 +503,7 @@ namespace AutoFixtureTester
             this.textBoxPin11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin11.Enabled = false;
             this.textBoxPin11.Location = new System.Drawing.Point(29, 195);
-            this.textBoxPin11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin11.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin11.Name = "textBoxPin11";
             this.textBoxPin11.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin11.TabIndex = 28;
@@ -523,7 +524,7 @@ namespace AutoFixtureTester
             this.textBoxPin12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin12.Enabled = false;
             this.textBoxPin12.Location = new System.Drawing.Point(29, 212);
-            this.textBoxPin12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin12.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin12.Name = "textBoxPin12";
             this.textBoxPin12.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin12.TabIndex = 31;
@@ -544,7 +545,7 @@ namespace AutoFixtureTester
             this.textBoxPin13.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin13.Enabled = false;
             this.textBoxPin13.Location = new System.Drawing.Point(30, 229);
-            this.textBoxPin13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin13.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin13.Name = "textBoxPin13";
             this.textBoxPin13.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin13.TabIndex = 37;
@@ -565,7 +566,7 @@ namespace AutoFixtureTester
             this.textBoxPin14.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin14.Enabled = false;
             this.textBoxPin14.Location = new System.Drawing.Point(30, 246);
-            this.textBoxPin14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin14.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin14.Name = "textBoxPin14";
             this.textBoxPin14.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin14.TabIndex = 40;
@@ -586,7 +587,7 @@ namespace AutoFixtureTester
             this.textBoxPin15.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin15.Enabled = false;
             this.textBoxPin15.Location = new System.Drawing.Point(30, 263);
-            this.textBoxPin15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin15.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin15.Name = "textBoxPin15";
             this.textBoxPin15.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin15.TabIndex = 43;
@@ -607,7 +608,7 @@ namespace AutoFixtureTester
             this.textBoxPin16.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin16.Enabled = false;
             this.textBoxPin16.Location = new System.Drawing.Point(30, 280);
-            this.textBoxPin16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin16.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin16.Name = "textBoxPin16";
             this.textBoxPin16.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin16.TabIndex = 46;
@@ -628,7 +629,7 @@ namespace AutoFixtureTester
             this.textBoxPin17.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin17.Enabled = false;
             this.textBoxPin17.Location = new System.Drawing.Point(30, 297);
-            this.textBoxPin17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin17.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin17.Name = "textBoxPin17";
             this.textBoxPin17.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin17.TabIndex = 49;
@@ -649,7 +650,7 @@ namespace AutoFixtureTester
             this.textBoxPin18.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin18.Enabled = false;
             this.textBoxPin18.Location = new System.Drawing.Point(30, 314);
-            this.textBoxPin18.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin18.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin18.Name = "textBoxPin18";
             this.textBoxPin18.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin18.TabIndex = 34;
@@ -670,7 +671,7 @@ namespace AutoFixtureTester
             this.textBoxPin19.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin19.Enabled = false;
             this.textBoxPin19.Location = new System.Drawing.Point(30, 331);
-            this.textBoxPin19.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin19.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin19.Name = "textBoxPin19";
             this.textBoxPin19.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin19.TabIndex = 52;
@@ -691,7 +692,7 @@ namespace AutoFixtureTester
             this.textBoxPin20.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin20.Enabled = false;
             this.textBoxPin20.Location = new System.Drawing.Point(29, 348);
-            this.textBoxPin20.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin20.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin20.Name = "textBoxPin20";
             this.textBoxPin20.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin20.TabIndex = 55;
@@ -712,7 +713,7 @@ namespace AutoFixtureTester
             this.textBoxPin21.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin21.Enabled = false;
             this.textBoxPin21.Location = new System.Drawing.Point(29, 365);
-            this.textBoxPin21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin21.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin21.Name = "textBoxPin21";
             this.textBoxPin21.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin21.TabIndex = 58;
@@ -733,7 +734,7 @@ namespace AutoFixtureTester
             this.textBoxPin22.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin22.Enabled = false;
             this.textBoxPin22.Location = new System.Drawing.Point(29, 382);
-            this.textBoxPin22.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin22.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin22.Name = "textBoxPin22";
             this.textBoxPin22.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin22.TabIndex = 61;
@@ -754,7 +755,7 @@ namespace AutoFixtureTester
             this.textBoxPin23.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin23.Enabled = false;
             this.textBoxPin23.Location = new System.Drawing.Point(29, 399);
-            this.textBoxPin23.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin23.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin23.Name = "textBoxPin23";
             this.textBoxPin23.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin23.TabIndex = 64;
@@ -775,7 +776,7 @@ namespace AutoFixtureTester
             this.textBoxPin24.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin24.Enabled = false;
             this.textBoxPin24.Location = new System.Drawing.Point(29, 416);
-            this.textBoxPin24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin24.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin24.Name = "textBoxPin24";
             this.textBoxPin24.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin24.TabIndex = 67;
@@ -796,7 +797,7 @@ namespace AutoFixtureTester
             this.textBoxPin25.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin25.Enabled = false;
             this.textBoxPin25.Location = new System.Drawing.Point(28, 436);
-            this.textBoxPin25.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin25.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin25.Name = "textBoxPin25";
             this.textBoxPin25.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin25.TabIndex = 70;
@@ -817,7 +818,7 @@ namespace AutoFixtureTester
             this.textBoxPin26.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin26.Enabled = false;
             this.textBoxPin26.Location = new System.Drawing.Point(284, 28);
-            this.textBoxPin26.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin26.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin26.Name = "textBoxPin26";
             this.textBoxPin26.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin26.TabIndex = 73;
@@ -838,7 +839,7 @@ namespace AutoFixtureTester
             this.textBoxPin27.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin27.Enabled = false;
             this.textBoxPin27.Location = new System.Drawing.Point(284, 45);
-            this.textBoxPin27.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin27.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin27.Name = "textBoxPin27";
             this.textBoxPin27.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin27.TabIndex = 77;
@@ -859,7 +860,7 @@ namespace AutoFixtureTester
             this.textBoxPin28.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin28.Enabled = false;
             this.textBoxPin28.Location = new System.Drawing.Point(284, 62);
-            this.textBoxPin28.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin28.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin28.Name = "textBoxPin28";
             this.textBoxPin28.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin28.TabIndex = 82;
@@ -880,7 +881,7 @@ namespace AutoFixtureTester
             this.textBoxPin29.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin29.Enabled = false;
             this.textBoxPin29.Location = new System.Drawing.Point(284, 79);
-            this.textBoxPin29.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin29.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin29.Name = "textBoxPin29";
             this.textBoxPin29.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin29.TabIndex = 85;
@@ -901,7 +902,7 @@ namespace AutoFixtureTester
             this.textBoxPin30.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin30.Enabled = false;
             this.textBoxPin30.Location = new System.Drawing.Point(284, 96);
-            this.textBoxPin30.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin30.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin30.Name = "textBoxPin30";
             this.textBoxPin30.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin30.TabIndex = 88;
@@ -922,7 +923,7 @@ namespace AutoFixtureTester
             this.textBoxPin31.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin31.Enabled = false;
             this.textBoxPin31.Location = new System.Drawing.Point(284, 113);
-            this.textBoxPin31.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin31.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin31.Name = "textBoxPin31";
             this.textBoxPin31.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin31.TabIndex = 91;
@@ -943,7 +944,7 @@ namespace AutoFixtureTester
             this.textBoxPin32.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin32.Enabled = false;
             this.textBoxPin32.Location = new System.Drawing.Point(284, 130);
-            this.textBoxPin32.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin32.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin32.Name = "textBoxPin32";
             this.textBoxPin32.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin32.TabIndex = 94;
@@ -964,7 +965,7 @@ namespace AutoFixtureTester
             this.textBoxPin33.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin33.Enabled = false;
             this.textBoxPin33.Location = new System.Drawing.Point(284, 147);
-            this.textBoxPin33.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin33.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin33.Name = "textBoxPin33";
             this.textBoxPin33.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin33.TabIndex = 78;
@@ -985,7 +986,7 @@ namespace AutoFixtureTester
             this.textBoxPin34.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin34.Enabled = false;
             this.textBoxPin34.Location = new System.Drawing.Point(284, 164);
-            this.textBoxPin34.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin34.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin34.Name = "textBoxPin34";
             this.textBoxPin34.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin34.TabIndex = 97;
@@ -1006,7 +1007,7 @@ namespace AutoFixtureTester
             this.textBoxPin35.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin35.Enabled = false;
             this.textBoxPin35.Location = new System.Drawing.Point(284, 181);
-            this.textBoxPin35.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin35.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin35.Name = "textBoxPin35";
             this.textBoxPin35.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin35.TabIndex = 100;
@@ -1027,7 +1028,7 @@ namespace AutoFixtureTester
             this.textBoxPin36.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin36.Enabled = false;
             this.textBoxPin36.Location = new System.Drawing.Point(284, 198);
-            this.textBoxPin36.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin36.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin36.Name = "textBoxPin36";
             this.textBoxPin36.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin36.TabIndex = 103;
@@ -1048,7 +1049,7 @@ namespace AutoFixtureTester
             this.textBoxPin37.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin37.Enabled = false;
             this.textBoxPin37.Location = new System.Drawing.Point(284, 215);
-            this.textBoxPin37.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin37.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin37.Name = "textBoxPin37";
             this.textBoxPin37.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin37.TabIndex = 106;
@@ -1069,7 +1070,7 @@ namespace AutoFixtureTester
             this.textBoxPin38.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin38.Enabled = false;
             this.textBoxPin38.Location = new System.Drawing.Point(285, 232);
-            this.textBoxPin38.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin38.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin38.Name = "textBoxPin38";
             this.textBoxPin38.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin38.TabIndex = 112;
@@ -1090,7 +1091,7 @@ namespace AutoFixtureTester
             this.textBoxPin39.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin39.Enabled = false;
             this.textBoxPin39.Location = new System.Drawing.Point(285, 249);
-            this.textBoxPin39.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin39.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin39.Name = "textBoxPin39";
             this.textBoxPin39.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin39.TabIndex = 115;
@@ -1111,7 +1112,7 @@ namespace AutoFixtureTester
             this.textBoxPin40.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin40.Enabled = false;
             this.textBoxPin40.Location = new System.Drawing.Point(285, 266);
-            this.textBoxPin40.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin40.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin40.Name = "textBoxPin40";
             this.textBoxPin40.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin40.TabIndex = 118;
@@ -1132,7 +1133,7 @@ namespace AutoFixtureTester
             this.textBoxPin41.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin41.Enabled = false;
             this.textBoxPin41.Location = new System.Drawing.Point(285, 283);
-            this.textBoxPin41.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin41.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin41.Name = "textBoxPin41";
             this.textBoxPin41.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin41.TabIndex = 121;
@@ -1153,7 +1154,7 @@ namespace AutoFixtureTester
             this.textBoxPin42.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin42.Enabled = false;
             this.textBoxPin42.Location = new System.Drawing.Point(285, 300);
-            this.textBoxPin42.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin42.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin42.Name = "textBoxPin42";
             this.textBoxPin42.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin42.TabIndex = 124;
@@ -1174,7 +1175,7 @@ namespace AutoFixtureTester
             this.textBoxPin43.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin43.Enabled = false;
             this.textBoxPin43.Location = new System.Drawing.Point(285, 317);
-            this.textBoxPin43.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin43.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin43.Name = "textBoxPin43";
             this.textBoxPin43.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin43.TabIndex = 109;
@@ -1195,7 +1196,7 @@ namespace AutoFixtureTester
             this.textBoxPin44.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin44.Enabled = false;
             this.textBoxPin44.Location = new System.Drawing.Point(285, 334);
-            this.textBoxPin44.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin44.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin44.Name = "textBoxPin44";
             this.textBoxPin44.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin44.TabIndex = 127;
@@ -1216,7 +1217,7 @@ namespace AutoFixtureTester
             this.textBoxPin45.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin45.Enabled = false;
             this.textBoxPin45.Location = new System.Drawing.Point(284, 351);
-            this.textBoxPin45.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin45.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin45.Name = "textBoxPin45";
             this.textBoxPin45.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin45.TabIndex = 130;
@@ -1237,7 +1238,7 @@ namespace AutoFixtureTester
             this.textBoxPin46.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin46.Enabled = false;
             this.textBoxPin46.Location = new System.Drawing.Point(284, 368);
-            this.textBoxPin46.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin46.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin46.Name = "textBoxPin46";
             this.textBoxPin46.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin46.TabIndex = 133;
@@ -1258,7 +1259,7 @@ namespace AutoFixtureTester
             this.textBoxPin47.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin47.Enabled = false;
             this.textBoxPin47.Location = new System.Drawing.Point(284, 385);
-            this.textBoxPin47.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin47.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin47.Name = "textBoxPin47";
             this.textBoxPin47.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin47.TabIndex = 136;
@@ -1279,7 +1280,7 @@ namespace AutoFixtureTester
             this.textBoxPin48.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin48.Enabled = false;
             this.textBoxPin48.Location = new System.Drawing.Point(284, 402);
-            this.textBoxPin48.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin48.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin48.Name = "textBoxPin48";
             this.textBoxPin48.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin48.TabIndex = 139;
@@ -1300,7 +1301,7 @@ namespace AutoFixtureTester
             this.textBoxPin49.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin49.Enabled = false;
             this.textBoxPin49.Location = new System.Drawing.Point(284, 419);
-            this.textBoxPin49.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin49.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin49.Name = "textBoxPin49";
             this.textBoxPin49.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin49.TabIndex = 142;
@@ -1321,7 +1322,7 @@ namespace AutoFixtureTester
             this.textBoxPin50.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxPin50.Enabled = false;
             this.textBoxPin50.Location = new System.Drawing.Point(283, 439);
-            this.textBoxPin50.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBoxPin50.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPin50.Name = "textBoxPin50";
             this.textBoxPin50.Size = new System.Drawing.Size(173, 13);
             this.textBoxPin50.TabIndex = 145;
@@ -1428,27 +1429,38 @@ namespace AutoFixtureTester
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.textBoxPin1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(20, 76);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(20, 91);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(498, 463);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DUT Pins";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(60, 44);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(217, 25);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Automatic Cable Test";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(834, 578);
+            this.ClientSize = new System.Drawing.Size(896, 599);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Auto Cable Tester";
             this.groupBox2.ResumeLayout(false);
@@ -1575,6 +1587,7 @@ namespace AutoFixtureTester
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.TextBox textBoxPin50;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label3;
     }
 }
 

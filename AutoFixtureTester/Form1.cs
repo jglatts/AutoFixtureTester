@@ -7,6 +7,7 @@
 *       Date:   8/21/2025
 */
 using System;
+using System.Threading;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,6 +35,7 @@ namespace AutoFixtureTester
         private readonly int startShortTestCmd;
         private readonly int startFullTestCmd;
         private readonly int cmdStart;
+        private bool runningFulltest;
 
         public delegate void checkData(string line);
 
@@ -46,6 +48,7 @@ namespace AutoFixtureTester
             startShortTestCmd = 69;
             startFullTestCmd = 70;
             cmdStart = 71;
+            runningFulltest = false;
         }
 
         private void initUIComponents()
@@ -97,22 +100,10 @@ namespace AutoFixtureTester
 
         private void btnRunFullTest_Click(object sender, EventArgs e)
         {
-            if (!checkUserInput())
-                return;
-
-            if (!checkPort())
-                return;
-
-            sendCmdInfo(startFullTestCmd);
-            //runFullTest();
+            runOpenTest();
+            runShortTest();
         }
-
-        private void runFullTest()
-        { 
-            // will need data processing here
-        }
-
-
+        
         private void testComms(int cmd)
         {
             port.WriteLine(cmd + "");
@@ -135,6 +126,8 @@ namespace AutoFixtureTester
             if (!checkPort())
                 return false;
 
+            MessageBox.Show("Running Short Test");
+            runningFulltest = false;
             setUIForTest();
             sendCmdInfo(startShortTestCmd);
             waitForSerialData(checkShortData);
@@ -234,6 +227,8 @@ namespace AutoFixtureTester
             if (!checkPort())
                 return false;
 
+            MessageBox.Show("Running Open Test");
+            runningFulltest = false;
             setUIForTest();
             sendCmdInfo(startOpenTestCmd);
             waitForSerialData(checkOpenData);
@@ -274,21 +269,38 @@ namespace AutoFixtureTester
         }
 
         private void waitForSerialData(checkData dataCallback) {
+            bool is_done = false;
             while (true)
             {
                 try
                 {
-                    string check = port.ReadLine();
-                    if (check.Trim() == "done")
-                        return;
-                    dataCallback(check);
-                    txtBoxTestLogs.Text += DateTime.Now.ToString("hh:mm:ss") + ">> " + check + "\n";
+                    string dataLine = port.ReadLine();
+                    if (dataLine.Trim() == "done")
+                    {
+                        if (!runningFulltest || is_done)
+                        {
+                            txtBoxTestLogs.Text += "\n";
+                            return;
+                        }
+                        else
+                        {
+                            is_done = true;
+                        }
+                    }
+                    else
+                    {
+                        dataCallback(dataLine);
+                        txtBoxTestLogs.Text += DateTime.Now.ToString("hh:mm:ss") + ">> " + dataLine + "\n";
+                    }
                 }
                 catch (TimeoutException)
                 {
                     txtBoxTestLogs.Text += DateTime.Now.ToString("hh:mm:ss") + ">> timeout exp\n";
                     continue;
                 }
+
+                txtBoxTestLogs.SelectionStart = txtBoxTestLogs.Text.Length;
+                txtBoxTestLogs.ScrollToCaret();
             }
         }
 

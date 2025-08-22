@@ -59,8 +59,7 @@ void MainController::run() {
 }
 
 void MainController::runFullTest() {
-	if (!runOpenTest())
-		return;
+	runOpenTest();
 	runShortTest();
 }
 
@@ -74,7 +73,9 @@ void MainController::findIndicies() {
 }
 
 bool MainController::runOpenTest() {
-	// clear pin state
+	bool ret = true;
+
+	// clear pin states
 	for (int i = 0; i < NUM_TEST_PINS; i++) {
 		pinMode(dutPins[i].pcb_pin, INPUT_PULLUP);
 	}
@@ -89,6 +90,7 @@ bool MainController::runOpenTest() {
 		char buff[200];
 		bool check = true;
 		if (digitalRead(dutPins[i].pcb_pin) == HIGH) {
+			ret = false;
 			check = false;
 		}
 		if (check)
@@ -102,31 +104,38 @@ bool MainController::runOpenTest() {
 
 	Serial.println("done");
 
-	return true;
+	return ret;
 }
 
 bool MainController::runShortTest() {
+	bool ret = false;
+
 	sendToSignalController(SIG_CONTROLLER_ADDR, CLEAR_SIG_PINS);
 	delay(10);
 	for (int i = startIndex; i < endIndex; i++) {
 		PinMapping curr_pin = dutPins[i];
+		bool check = true;
+		int j;
+
 		for (int ii = 0; ii < 40; ii++) {
 			pinMode(dutPins[ii].pcb_pin, INPUT_PULLUP);
 		}
+
 		pinMode(curr_pin.pcb_pin, OUTPUT);
 		digitalWrite(curr_pin.pcb_pin, LOW);
-		bool ret = true;
-		int j;
+
 		for (j = startIndex; j < endIndex; j++) {
 			if (i == j)
 				continue;
 			if (digitalRead(dutPins[j].pcb_pin) == LOW) {
 				ret = false;
+				check = false;
 				break;
 			}
 		}
+
 		char buff[200];
-		if (ret) {
+		if (check) {
 			sprintf(buff, "pin,%d,noshort", dutPins[i].dut_test_pin);
 			Serial.println(buff);
 		}
@@ -135,7 +144,10 @@ bool MainController::runShortTest() {
 			Serial.println(buff);
 		}
 	}
+
 	Serial.println("done");
+
+	return ret;
 }
 
 void MainController::sendToSignalController(int addr, int data) {
