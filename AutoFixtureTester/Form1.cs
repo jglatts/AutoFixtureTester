@@ -114,16 +114,17 @@ namespace AutoFixtureTester
             if (!checkPort())
                 return;
 
-            MessageBox.Show("Running Short Test");
-            setUIForTest();
-            sendCmdInfo(startShortTestCmd);
-            waitForSerialData(checkShortData);
 
             MessageBox.Show("Running Open Test");
             setUIForTest();
             sendCmdInfo(startOpenTestCmd);
             waitForSerialData(checkOpenData);
-            
+
+            MessageBox.Show("Running Short Test");
+            setUIForTest();
+            sendCmdInfo(startShortTestCmd);
+            waitForSerialData(checkShortData);
+
             printTestFailures();
         }
 
@@ -236,6 +237,9 @@ namespace AutoFixtureTester
                     MessageBox.Show($"No control named {"textBoxPin" + i} found.");
                 }
             }
+
+            // check for failures here and set UI
+
         }
 
         private void btnRunOpenTest_Click(object sender, EventArgs e)

@@ -272,7 +272,7 @@ namespace AutoFixtureTester
             // 
             this.txtBoxTestLogs.Location = new System.Drawing.Point(22, 25);
             this.txtBoxTestLogs.Name = "txtBoxTestLogs";
-            this.txtBoxTestLogs.Size = new System.Drawing.Size(287, 172);
+            this.txtBoxTestLogs.Size = new System.Drawing.Size(287, 167);
             this.txtBoxTestLogs.TabIndex = 0;
             this.txtBoxTestLogs.Text = "";
             // 
