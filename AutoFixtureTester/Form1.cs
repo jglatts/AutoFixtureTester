@@ -41,7 +41,6 @@ namespace AutoFixtureTester
         private int dutEndPin;
         private readonly int startOpenTestCmd;
         private readonly int startShortTestCmd;
-        private readonly int startFullTestCmd;
         private readonly int cmdStart;
 
         public delegate void checkData(string line);
@@ -53,7 +52,6 @@ namespace AutoFixtureTester
             initUIComponents();
             startOpenTestCmd = 68;
             startShortTestCmd = 69;
-            startFullTestCmd = 70;
             cmdStart = 71;
         }
 
@@ -160,6 +158,39 @@ namespace AutoFixtureTester
             return ret;
         }
 
+        private void handleNoShort(int pin)
+        {
+            Control[] matches = this.Controls.Find("textBoxPin" + pin, true);
+            if (matches.Length > 0 && matches[0] is TextBox tb)
+            {
+                tb.BackColor = Color.Green;
+            }
+            else
+            {
+                MessageBox.Show($"No control named {"textBoxPin" + pin} found.");
+            }
+        }
+
+        private void handleShort(string[] data, int pin)
+        {
+            try
+            {
+                int short_pin = Int32.Parse(data[3].Trim());
+                Control[] testPin = this.Controls.Find("textBoxPin" + pin, true);
+                Control[] shortPin = this.Controls.Find("textBoxPin" + short_pin, true);
+                if (testPin.Length > 0 && testPin[0] is TextBox tb)
+                    tb.BackColor = Color.Red;
+                if (shortPin.Length > 0 && shortPin[0] is TextBox t)
+                    t.BackColor = Color.Red;
+                testResult.hasFailure = true;
+                testResult.failures.Add("pin #" + pin + " shorted with pin #" + short_pin);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+            }
+        }
+
         private void checkShortData(string line)
         {
             string[] data = line.Trim().Split(',');
@@ -172,41 +203,14 @@ namespace AutoFixtureTester
                     MessageBox.Show("err in checkshortdata");
                     return;
                 }
+
                 if (data[2].Trim() == "noshort")
                 {
-                    Control[] matches = this.Controls.Find("textBoxPin" + pin, true);
-                    if (matches.Length > 0 && matches[0] is TextBox tb)
-                    {
-                        tb.BackColor = Color.Green;
-                    }
-                    else
-                    {
-                        MessageBox.Show($"No control named {"textBoxPin" + pin} found.");
-                    }
+                    handleNoShort(pin);
                 }
                 else
                 {
-                    // debug this throwing on 1st call
-                    try
-                    {
-                        int short_pin = Int32.Parse(data[3].Trim());
-                        Control[] testPin = this.Controls.Find("textBoxPin" + pin, true);
-                        Control[] shortPin = this.Controls.Find("textBoxPin" + short_pin, true);
-                        if (testPin.Length > 0 && testPin[0] is TextBox tb)
-                        {
-                            tb.BackColor = Color.Red;
-                        }
-                        if (shortPin.Length > 0 && shortPin[0] is TextBox t)
-                        {
-                            t.BackColor = Color.Red;
-                        }
-                        testResult.hasFailure = true;
-                        testResult.failures.Add("pin #" + pin + " shorted with pin #" + short_pin);
-                    }
-                    catch (Exception e) 
-                    {
-                        MessageBox.Show(e.ToString());
-                    }
+                    handleShort(data, pin);
                 }
             }
         }
@@ -267,35 +271,42 @@ namespace AutoFixtureTester
             return ret;
         }
 
+
+        private void handleOpenData(string[] data)
+        {
+            int pin = -1;
+
+            Int32.TryParse(data[1], out pin);
+            if (pin == -1)
+            {
+                MessageBox.Show("err in checkopendata");
+                return;
+            }
+
+            Control[] matches = this.Controls.Find("textBoxPin" + pin, true);
+            if (matches.Length > 0 && matches[0] is TextBox tb)
+            {
+                if (data[2].Trim() == "passed")
+                    tb.BackColor = Color.Green;
+                else
+                {
+                    testResult.hasFailure = true;
+                    testResult.failures.Add("pin #" + pin + " open circuit");
+                    tb.BackColor = Color.OrangeRed;
+                }
+            }
+            else
+            {
+                MessageBox.Show($"No control named {"textBoxPin" + pin} found.");
+            }
+        }
+
         private void checkOpenData(string line) 
         {
             string[] data = line.Split(',');
-            int pin = -1;
             if (data.Length >= 3)
             {
-                Int32.TryParse(data[1], out pin);
-                if (pin == -1)
-                {
-                    MessageBox.Show("err in checkopendata");
-                    return;
-                }
-
-                Control[] matches = this.Controls.Find("textBoxPin" + pin, true);
-                if (matches.Length > 0 && matches[0] is TextBox tb)
-                {
-                    if (data[2].Trim() == "passed")
-                        tb.BackColor = Color.Green;
-                    else
-                    {
-                        testResult.hasFailure = true;
-                        testResult.failures.Add("pin #" + pin + " open circuit");
-                        tb.BackColor = Color.OrangeRed;
-                    }
-                }
-                else
-                {
-                    MessageBox.Show($"No control named {"textBoxPin" + pin} found.");
-                }
+                handleOpenData(data);    
             }
             else
             {
