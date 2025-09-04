@@ -10,15 +10,15 @@ This project includes:
 ---
 
 ## Features
-- ✅ Detects **open circuits** across specified pin ranges  
-- ✅ Detects **short circuits** between adjacent and non-adjacent pins  
-- ✅ Supports **partial range testing** (start pin → end pin)  
-- ✅ Real-time results displayed in UI with color-coded pins:
+- Detects **open circuits** across specified pin ranges  
+- Detects **short circuits** between adjacent and non-adjacent pins  
+- Supports **partial range testing** (start pin → end pin)  
+- Real-time results displayed in UI with color-coded pins:
   - **Green** = pass  
   - **OrangeRed** = open  
   - **Red** = short  
-- ✅ Timestamped test logs  
-- ✅ Debug/diagnostic utilities for I²C comms and pin state checking  
+- Timestamped test logs  
+- Debug/diagnostic utilities for I²C comms and pin state checking  
 
 ---
 

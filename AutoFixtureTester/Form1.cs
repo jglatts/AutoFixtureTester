@@ -249,6 +249,7 @@ namespace AutoFixtureTester
         /// </summary>
         private void setUIForTest()
         {
+            
             // rest tp gray
             for (int i = 1; i < 51; i++)
                 getPinTextBox(i).BackColor = Color.Gray;
@@ -379,7 +380,6 @@ namespace AutoFixtureTester
                     txtBoxTestLogs.Text += DateTime.Now.ToString("hh:mm:ss") + ">> timeout exp\n";
                     continue;
                 }
-
                 txtBoxTestLogs.SelectionStart = txtBoxTestLogs.Text.Length;
                 txtBoxTestLogs.ScrollToCaret();
             }
