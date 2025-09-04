@@ -9,6 +9,10 @@ This project includes:
 
 ---
 
+## System Images
+![pcb](https://raw.githubusercontent.com/jglatts/AutoFixtureTester/refs/heads/master/AutoFixtureTester/Images/atf-ctf-pcb.jpg)
+![gui](https://raw.githubusercontent.com/jglatts/AutoFixtureTester/refs/heads/master/AutoFixtureTester/Images/gui.png)
+
 ## Features
 - Detects **open circuits** across specified pin ranges  
 - Detects **short circuits** between adjacent and non-adjacent pins  
