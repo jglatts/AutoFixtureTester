@@ -27,9 +27,6 @@ namespace AutoFixtureTester
         private Result testResult;
         private int dutStartPin;
         private int dutEndPin;
-        private readonly int startOpenTestCmd;
-        private readonly int startShortTestCmd;
-        private readonly int cmdStart;
 
         public delegate void checkData(string line);
 
@@ -41,9 +38,6 @@ namespace AutoFixtureTester
             InitializeComponent();
             initSerialPort();
             initUIComponents();
-            startOpenTestCmd = 68;
-            startShortTestCmd = 69;
-            cmdStart = 71;
         }
 
         /// <summary>
@@ -102,9 +96,9 @@ namespace AutoFixtureTester
         /// Sends a command to the device including start/end pins
         /// </summary>
         /// <param name="cmd">Command code to send</param>
-        private void sendCmdInfo(int cmd)
+        private void sendCmdInfo(TEST_CMD cmd)
         {
-            port.Write($"{cmdStart} {dutStartPin} {dutEndPin} {cmd}\n");
+            port.Write($"{(int)TEST_CMD.START_CMD} {dutStartPin} {dutEndPin} {(int)cmd}\n");
         }
 
         /// <summary>
@@ -121,11 +115,11 @@ namespace AutoFixtureTester
                 return;
 
             setUIForTest();
-            sendCmdInfo(startOpenTestCmd);
+            sendCmdInfo(TEST_CMD.OPEN_TEST_CMD);
             waitForSerialData(checkOpenData);
 
             setUIForTest();
-            sendCmdInfo(startShortTestCmd);
+            sendCmdInfo(TEST_CMD.SHORT_TEST_CMD);
             waitForSerialData(checkShortData);
 
             printTestFailures();
@@ -166,7 +160,7 @@ namespace AutoFixtureTester
                 return false;
 
             setUIForTest();
-            sendCmdInfo(startShortTestCmd);
+            sendCmdInfo(TEST_CMD.SHORT_TEST_CMD);
             waitForSerialData(checkShortData);
             printTestFailures();
 
@@ -283,7 +277,7 @@ namespace AutoFixtureTester
                 return false;
 
             setUIForTest();
-            sendCmdInfo(startOpenTestCmd);
+            sendCmdInfo(TEST_CMD.OPEN_TEST_CMD);
             waitForSerialData(checkOpenData);
             printTestFailures();
 
